@@ -322,7 +322,7 @@ button.addEventListener("click",function()
 })
 
 var arr = [{img:"lmn.png"},
-{img:"lmn.png"},
+{img:".png"},
 {img:"lmn.png"},
 {img:"lmn.png"},
 {img:"lmn.png"},
