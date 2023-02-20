@@ -320,3 +320,44 @@ button.addEventListener("click",function()
         display: "none",
     },"same2")
 })
+
+var arr = [{img:"lmn.png"},
+{img:"lmn.png"},
+{img:"lmn.png"},
+{img:"lmn.png"},
+{img:"lmn.png"},
+{img:"lmn.png"},
+{img:"lmn.png"},
+{img:"lmn.png"},
+{img:"lmn.png"},
+{img:"lmn.png"}
+];
+
+var clutter = "";
+arr.forEach(function(val)
+{
+    clutter = clutter + `               
+    <div class = "clmA">
+    <div id="A" class="alpha">
+        <img src="${val.img}" alt="loading">
+    </div>
+    <div class="beta">
+    <img src="${val.img}" alt="loading">
+    </div>
+    <div class="charlie">
+    <img src="${val.img}" alt="loading">
+    </div>
+    <div class="delta">
+    <img src="${val.img}" alt="loading">
+    </div>
+    <div class="echo">
+    <img src="${val.img}" alt="loading">
+    </div>
+    <div class="foxtrot">
+    <img src="${val.img}" alt="loading">
+    </div>
+    </div>`
+});
+
+var columns = document.querySelector("#columns");
+columns.innerHTML = clutter;

@@ -291,6 +291,13 @@
         display: flex;
         flex-direction: column;
     }
+    #bottum #wraper
+    {
+        width: 100%;
+        height: 100%;
+        position :absolute;
+        display: none;
+    }
     #bottum-top{
         height: 60.3%;
         display: flex;
@@ -712,3 +719,124 @@
         text-align: center;
     
     }
+
+
+
+#columns
+{
+    width: 100%;
+    height: 100%;
+    background-color: burlywood;
+    display: flex;
+    justify-content: space-between;
+}
+.clmA
+{
+    height: 100%;
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 2s;
+}
+.clmA img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.alpha
+{
+    width: 100%;
+    height: 16%;
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 2s;
+    overflow: auto;
+}
+.alpha:hover{
+    scale: 1.2;
+    overflow: auto;
+}
+.alpha img:hover{
+    scale: 1.2;
+}
+.alpha>img
+{
+    position: relative;
+    top: -15px;
+}
+
+.beta
+{
+    width: 100%;
+    height: 16%;
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 2s;
+}
+.beta:hover{
+    scale: 1.2;
+    overflow: auto;
+}
+.beta img:hover{
+    scale: 1.2;
+}
+.charlie
+{
+    width: 100%;
+    height: 16%;
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 2s;
+
+}
+.charlie:hover{
+    scale: 1.2;
+    overflow: auto;
+}
+.charlie img:hover{
+    scale: 1.2;
+}
+.delta
+{
+    width: 100%;
+    height: 16%;
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 2s;
+
+}
+.delta:hover{
+    scale: 1.2;
+    overflow: auto;
+}
+.delta img:hover{
+    scale: 1.2;
+}
+.echo
+{
+    width: 100%;
+    height: 16%;
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 2s;
+
+}
+.echo:hover{
+    scale: 1.2;
+    overflow: auto;
+}
+.echo img:hover{
+    scale: 1.2;
+}
+.foxtrot
+{
+    width: 100%;
+    height: 16%;
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 2s;
+}
+.foxtrot>img
+{
+    position: relative;
+    bottom: -15px;
+}
+.foxtrot:hover{
+    scale: 1.2;
+    overflow: auto;
+}
+.foxtrot img:hover{
+    scale: 1.2;
+}
