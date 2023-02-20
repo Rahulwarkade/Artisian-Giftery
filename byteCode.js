@@ -7,7 +7,6 @@ const Trending=document.querySelector(".ri-apps-fill");
 const trending1=document.querySelector("#trending");
 const mystuff=document.querySelector(".ri-file-cloud-fill");
 const mystuff1=document.querySelector("#mystuff");
-
 var flag = 1;
 remenufill.addEventListener("click",function()
 {
@@ -55,7 +54,6 @@ overlay.addEventListener("click",function()
         gift1.style.left = "-100%";
         gift1.style.transition = "all cubic-bezier(0.165, 0.84, 0.44, 1) 1s";
 })
-
 var flag2=1;
 Trending.addEventListener("click",function()
 {  
@@ -80,7 +78,6 @@ overlay.addEventListener("click",function()
         trending1.style.transition = "all cubic-bezier(0.165, 0.84, 0.44, 1) 1s";
         
 })
-
 var flag3=1;
 mystuff.addEventListener("click",function()
 {  
@@ -106,3 +103,220 @@ overlay.addEventListener("click",function()
         
 })
 
+var tl = gsap.timeline()
+tl.to("#itm3 h1",
+{
+    opacity : 1,
+    duration : 2,
+},"same")
+.to("#itm3 h2",
+{
+    opacity : 1,
+    duration : 2,
+},"same")
+.to("#itm3 button",
+{
+    opacity : 1,
+})
+.to("#itm3 h1",
+{
+    delay : 1,
+    scale : 1,
+    duration : 2,
+},"same1")
+.to("#itm3 h2",
+{
+    delay : 1,
+   scale : 1,
+   duration : 2,
+},"same1")
+.to("#itm3 button",
+{
+   delay : 1,
+   scale : 1,
+   duration : 2,
+},"same1")
+.from("#itm1",
+{
+    left : "-100%",
+    duration : 3,
+},"same1")
+.from("#itm2",
+{
+    left : "-100%",
+    duration : 3,
+},"same1")
+.from("#itm4",
+{
+    right : "-100%",
+    duration : 3,
+},"same1")
+.from("#itm5",
+{
+    right : "-100%",
+    duration : 3,
+},"same1")
+.from("#bt-itm3",
+{
+    bottom : "-100%", 
+    duration : 3,
+},"same1")
+.from("#bt-itm1",
+{
+    left : "-100%", 
+    delay : 1,
+    duration : 3,
+},"same1")
+.from("#bt-itm2",
+{
+    left : "-100%",
+    delay : 1, 
+    duration : 3,
+},"same1")
+.from("#bt-itm4",
+{
+    right : "-100%", 
+    delay : 1,
+    duration : 3,
+},"same1")
+.from("#bt-itm5",
+{
+    right : "-100%", 
+    delay : 1,
+    duration : 3,
+},"same1")
+
+.from("#mid-itm1",
+{
+    left : "-100%", 
+    delay : 1,
+    duration : 3,
+},"same1")
+.from("#mid-itm2",
+{
+    left : "-100%", 
+    delay : 1,
+    duration : 3,
+},"same1")
+.from("#mid-itm3",
+{
+    right : "-100%", 
+    delay : 1,
+    duration : 3,
+},"same1")
+.from("#mid-itm4",
+{
+    right : "-100%", 
+    delay : 1,
+    duration : 3,
+},"same1")
+.from("#mid-itm5",
+{
+    right : "-100%", 
+    delay : 1,
+    duration : 3,
+},"same1")
+
+var button = document.querySelector("#itm3 button");
+
+button.addEventListener("click",function()
+{
+    var tl1 = gsap.timeline();
+    tl1.to("#itm3 h1",
+    {
+        opacity : 0,
+        // duration : 2,
+    },"same")
+    .to("#itm3 h2",
+    {
+        opacity : 0,
+        // duration : 2,
+    },"same")
+    .to("#itm3 button",
+    {
+        opacity : 0,
+    })
+    .to("#itm1",
+    {
+        scale : 0,
+        // duration : 3,
+    },"same1")
+    .to("#itm2",
+    {
+        scale : 0,
+        // duration : 3,
+    },"same1")
+    .to("#itm4",
+    {
+        scale : 0,
+        // duration : 3,
+    },"same1")
+    .to("#itm5",
+    {
+        scale : 0,
+        // duration : 3,
+    },"same1")
+    .to("#bt-itm3",
+    {
+        scale : 0,
+        // duration : 3,
+    },"same1")
+    .to("#bt-itm1",
+    {
+        scale : 0,
+        // duration : 3,
+    },"same1")
+    .to("#bt-itm2",
+    {
+        scale : 0,
+        // duration : 3,
+    },"same1")
+    .to("#bt-itm4",
+    {
+        scale : 0,
+        // duration : 3,
+    },"same1")
+    .to("#bt-itm5",
+    {
+        scale : 0,
+        // duration : 3,
+    },"same1")
+    
+    .to("#mid-itm1",
+    {
+        scale : 0,
+        // duration : 3,
+    },"same1")
+    .to("#mid-itm2",
+    {
+        scale : 0,
+        // duration : 3,
+    },"same1")
+    .to("#mid-itm3",
+    {
+        scale : 0,
+        // duration : 3,
+    },"same1")
+    .to("#mid-itm4",
+    {
+        scale : 0,
+        // duration : 3,
+    },"same1")
+    .to("#mid-itm5",
+    {
+        scale : 0,
+        // duration : 3,
+    },"same1")
+    .to("#buttum-mid",
+    {
+        display: "none",
+    },"same2")
+    .to("#bottum-top",
+    {
+        display: "none",
+    },"same2")
+    .to("#buttum-botm",
+    {
+        display: "none",
+    },"same2")
+})

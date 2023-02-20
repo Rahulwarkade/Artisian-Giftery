@@ -1,4 +1,4 @@
-*{
+    *{
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
@@ -11,7 +11,10 @@
     height: 100%;
     
     }
-    
+    *::-webkit-scrollbar
+    {
+        display : none;
+    }
     #main
     {
         width: 100%;
@@ -30,6 +33,7 @@
         height: 100%;
         width: 5vw;
         z-index: 99999;
+        border-right: 1px solid rgba(0, 0, 0, 0.433);
     }
     #nav-bar
     {
@@ -83,6 +87,7 @@
         width: calc(100% - 5vw);
         left: 5vw;
         display: flex;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.433);
     }
     #tnl
     {
@@ -199,7 +204,7 @@
         height: 30%;
         left: 5vw;
         top : 5vw;
-        background-color: #f5f5f5;
+        background-color: #FFFFFF;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -220,7 +225,7 @@
         
     }
     #item1{
-        background-color: white;
+        background-color: #F5F5F5;
         border-radius: 50%;
         display: flex;    
         justify-content: center;
@@ -237,7 +242,7 @@
         background-image: url("Images/HandMade-bag/Boho-bag/p2/i1.png");
         background-size: 100% 100%;
         background-repeat: no-repeat;
-        background-color: white;
+        background-color: #F5F5F5;
         border-radius: 50%;
     }
     #item3{
@@ -287,12 +292,13 @@
         flex-direction: column;
     }
     #bottum-top{
-        height: 33.3%;
-        overflow: hidden;
+        height: 60.3%;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        
+        justify-content: space-around;    
+        align-items: center;
+        overflow: auto;
+        /* background-color: green; */
     }
     .bottum-itm{
         height: 130px;
@@ -306,33 +312,68 @@
         background-size: 120% 120%;
         background-repeat: no-repeat;
         position: relative;
-        left: -150px;;
+        left: -10%;
     }
     #itm2{
         background-image: url("Images/Wooden-drink-coaster-Mandala/Owl-shaped/p1/i3.png");
         background-size: 100% 100%;
         background-repeat: no-repeat;
         position: relative;
-        left: -190px;
+        left: -10%;
     }
     #itm3{
         /* background-image: url(""); */
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
+        width: 40%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items : center;
+        justify-content: center;
+        gap: 15px;
+        position: relative;
+    }
+    #itm3 h1
+    {
+        opacity : 0;
+        scale : 1.2;
+    }
+
+    #itm3 button
+    {
+        padding: 20px 50px;
+        border-radius: 7px;
+        background-color : rgb(73,58,58);
+        color : white;
+        border-color: transparent;
+        opacity: 0;
+        scale: 1.2;
+    }
+    #itm3 button:hover{
+        background-color: rgb(239, 108, 108);
+        cursor: pointer;
+    }
+    #itm3 h2
+    {
+        font-family: "Voyage";
+        font-weight: 300;
+        font-size: 50px;
+        white-space: nowrap;
+        opacity: 0;
+        scale : 1.2;
     }
     #itm4{
         background-image: url("Images/HandMade-bag/handmade-pursh-for-women/p2/i2.png");
         background-size: 100% 100%;
         background-repeat: no-repeat;
         position: relative;
-        right: -200px;
+        right: -10%;
     }
     #itm5{
         background-image: url("Images/brass-product/taxi/p1/i1.png");
         background-size: 110% 110%;
         background-repeat: no-repeat;
         position: relative;
-        right: -130px;
+        right: -7%;
     }
     #buttum-mid{
         height: 33.3%;
@@ -340,6 +381,7 @@
         flex-direction: row;
         justify-content: space-around;
         overflow: hidden;
+        /* background-color: aqua; */
     }
     .mid-itm{
         height: 120px;
@@ -386,8 +428,9 @@
         flex-direction: row;
         justify-content: space-around;
         overflow: hidden;
-    }
-    
+        /* background-color: violet; */
+    } 
+
     .bottum-end-itm{
         height: 120px;
         width: 120px;
@@ -399,7 +442,8 @@
         background-size: 100% 100%;
         background-repeat: no-repeat;
         position: relative;
-        left: -100px;;
+        left: -100px;
+        bottom : 0%;
     }
     #bt-itm2{
         background-image: url("Images/Wooden-Jewelry/wooden-and-brass-handmade/p3/i3.png");
@@ -407,11 +451,13 @@
         background-repeat: no-repeat;
         position: relative;
         left: -100px;
+        bottom : 0%;
     }
     #bt-itm3{
         background-image: url("Images/brass-product/Car/p1/i3.png");
         background-size: 100% 100%;
         background-repeat: no-repeat;
+        bottom : 0%;
     }
     #bt-itm4{
         background-image: url("Images/Golden-Handcrafted-Palm-buddha/p1/i2.png");
@@ -419,6 +465,7 @@
         background-repeat: no-repeat;
         position: relative;
         right: -100px;
+        bottom : 0%;
     }
     #bt-itm5{
         background-image: url("Images/wooden-Tradition-item/p1/i2.png");
@@ -426,9 +473,9 @@
         background-repeat: no-repeat;
         position: relative;
         right: -100px;
+        bottom : 0%;
+
     }
-
-
 
     #mainu-text {
         position: absolute;
@@ -599,8 +646,7 @@
         padding-left: 20px;  
     
     }
-    
-    
+      
     #mystuff video{
         position:relative;
         top:20px;
