@@ -1,210 +1,668 @@
 *{
-margin: 0%;
-padding: 0%;
-box-sizing: border-box;
-font-family: Gilroy;
-}
-html,
-body
-{
-width: 100%;
-height: 100%;
-}
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Gilroy;
+    }
+    html,
+    body
+    {
+    width: 100%;
+    height: 100%;
+    
+    }
+    
+    #main
+    {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    #overlay
+    {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    #left-nav
+    {
+        position: absolute;
+        height: 100%;
+        width: 5vw;
+        z-index: 99999;
+    }
+    #nav-bar
+    {
+        width: 100%;
+        height: 12%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #nav-bar i{
+        font-size: 40px;
+        color: rgba(0, 0, 0, 0.773);
+    }
+    #navigation
+    {   position: relative;
+        width: 100%;
+        height: 88%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+    }
+    .navi
+    {
+        width: 80%;
+        height: 100%;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.729);
+    }
+    .navi i{
+        width: 100%;
+        height: 100%;
+        font-size: 40px;
+    }
+    .navi h1
+    {
+        font-size: 15px;
+        font-weight: 300;
+    }
+    #gifts img{
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    #top-nav
+    {
+        position: absolute;
+        height: 5vw;
+        width: calc(100% - 5vw);
+        left: 5vw;
+        display: flex;
+    }
+    #tnl
+    {
+        position: relative;
+        height: 100%;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding-left: 20px;
+    }
+    #search
+    {
+        width: 40%;
+        height: 60%;
+        border-radius: 20px;
+        padding: 10px 15px;
+        border: 1px solid rgba(0, 0, 0, 0.433);
+    }
+    #searchdiv
+    {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #circle
+    {
+        width: 5vh;
+        height: 5vh;
+        border-radius: 50%;
+        background-color: #07142C;
+        display : flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #circle i
+    {
+        color: white;
+        font-size: 20px;
+    }
+    #search h1
+    {
+        font-size: 12px;
+        font-weight: 300;
+        color: black;
+        opacity: .7;
+    }
+    #tnr
+    {
+        position: relative;
+        height: 100%;
+        display: flex;
+        left: 12%;
+        padding-left: 12%;
+        width: calc(50% - 12%);
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    #signin
+    {
+        width: 22%;
+        height: 45%;
+        background-color: blue;
+        border-radius: 4px;
+        display: flex;
+        white-space: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    #signin h1
+    {
+        color : white;
+        font-weight: 400;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    #brows
+    {
+        width: 3vw;
+        height: 3vw;
+        background-color: rgba(128, 128, 128, 0.293);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #brows i{
+        font-size: 20px;
+        color: black;
+    
+    }
+    #cart
+    {
+        width: 3vw;
+        height: 3vw;
+        background-color: rgba(128, 128, 128, 0.293);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #cart i
+    {
+        font-size: 20px;
+        color: black;
+    }
+    #top
+    {
+        position: absolute;
+        width: calc(100% - 5vw);
+        height: 30%;
+        left: 5vw;
+        top : 5vw;
+        background-color: #f5f5f5;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+        padding-bottom: 30px;
+    }
+    .top-item{
+        height: 150px;
+        width: 150px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;     
+    }
+    .top-item div{
+        position: absolute;
+        bottom: 10%;
+        
+    }
+    #item1{
+        background-color: white;
+        border-radius: 50%;
+        display: flex;    
+        justify-content: center;
+        align-items: center;
+    }
+    #item1>img
+    {
+        width: 80%;
+        height: 80%;
+        background-size: cover;
+        background-position: center;
+    }
+    #item2{
+        background-image: url("Images/HandMade-bag/Boho-bag/p2/i1.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-color: white;
+        border-radius: 50%;
+    }
+    #item3{
+        background-image: url("Images/bobo-handpainted-indian-vehicles/taxi/i1.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-color: white;
+        border-radius: 50%;
+    }
+    #item4{
+        background-image: url("Images/brass-product/elephant/p1/i1.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-color: white;
+        border-radius: 50%;
+    }
+    #item5{
+        background-color: white;
+        border-radius: 50%;
+        display: flex;    
+        justify-content: center;
+        align-items: center;
+    }
+    #item5>img
+    {
+        width: 80%;
+        height: 80%;
+        background-size: cover;
+        background-position: center;
+    }
+    #item6{
+        background-image: url("Images/Dhoop-stand/Meditating-buddha/p2/i1.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-color: white;
+        border-radius: 50%;
+    }
+    #bottum
+    {
+        position: absolute;
+        width: calc(100% - 5vw);
+        height: calc(100% - 30% - 5vw);
+        left: 5vw;
+        top : calc(30% + 5vw);
+        background-color: #f5f5f5;
+        display: flex;
+        flex-direction: column;
+    }
+    #bottum-top{
+        height: 33.3%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        
+    }
+    .bottum-itm{
+        height: 130px;
+        width: 130px;
+        /* position: relative;
+        top: -65px; */
+        
+    }
+    #itm1{
+        background-image: url("Images/Wooden-drink-coaster-Mandala/Square-shaped-text/p2/i4.png");
+        background-size: 120% 120%;
+        background-repeat: no-repeat;
+        position: relative;
+        left: -150px;;
+    }
+    #itm2{
+        background-image: url("Images/Wooden-drink-coaster-Mandala/Owl-shaped/p1/i3.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        position: relative;
+        left: -190px;
+    }
+    #itm3{
+        /* background-image: url(""); */
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    #itm4{
+        background-image: url("Images/HandMade-bag/handmade-pursh-for-women/p2/i2.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        position: relative;
+        right: -200px;
+    }
+    #itm5{
+        background-image: url("Images/brass-product/taxi/p1/i1.png");
+        background-size: 110% 110%;
+        background-repeat: no-repeat;
+        position: relative;
+        right: -130px;
+    }
+    #buttum-mid{
+        height: 33.3%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        overflow: hidden;
+    }
+    .mid-itm{
+        height: 120px;
+        width: 120px;
+        position: relative;
+    }
+    #mid-itm1{
+        background-image: url("images/pen-holder/p1/i1.png");
+        background-size: 100% 100%;
+        position: relative;
+        left: -100px;;
+    }
+    #mid-itm2{
+        background-image: url("Images/Dhoop-stand/Lord-shiva/p3/i2.png");
+        background-size: 95% 114%;
+        position: relative;
+        background-repeat: no-repeat;
+        left: -100px;;
+    }
+    #mid-itm3{
+        /* background-image: url("images/logo/logo3.png"); */
+        background-size: 100% 100%;
+        width: 35%;
+        height: 100%;
+        position: relative;
+       
+    
+    }
+    #mid-itm4{
+        background-image: url("images/decotative-toy/p5/i5.png");
+        background-size: 100% 100%;
+        position: relative;
+        right: -100px;
+    }
+    #mid-itm5{
+        background-image: url("images/hanging-wall/p8/i1.png");
+        background-size: 100% 100%;
+        position: relative;
+        right: -90px;
+    }
+    #buttum-botm{
+        height: 33.3%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        overflow: hidden;
+    }
+    
+    .bottum-end-itm{
+        height: 120px;
+        width: 120px;
+        position: relative;
+        bottom: -65px;
+    }
+    #bt-itm1{
+        background-image: url("images/brass-product/Camel/p1/i4.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        position: relative;
+        left: -100px;;
+    }
+    #bt-itm2{
+        background-image: url("Images/Wooden-Jewelry/wooden-and-brass-handmade/p3/i3.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        position: relative;
+        left: -100px;
+    }
+    #bt-itm3{
+        background-image: url("Images/brass-product/Car/p1/i3.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    #bt-itm4{
+        background-image: url("Images/Golden-Handcrafted-Palm-buddha/p1/i2.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        position: relative;
+        right: -100px;
+    }
+    #bt-itm5{
+        background-image: url("Images/wooden-Tradition-item/p1/i2.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        position: relative;
+        right: -100px;
+    }
 
-#main
-{
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
-#overlay
-{
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
-#left-nav
-{
-    position: absolute;
-    height: 100%;
-    width: 5vw;
-}
-#nav-bar
-{
-    width: 100%;
-    height: 12%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#nav-bar i{
-    font-size: 40px;
-    color: rgba(0, 0, 0, 0.773);
-}
-#navigation
-{   position: relative;
-    width: 100%;
-    height: 88%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-}
-.navi
-{
-    width: 80%;
-    height: 100%;
-    text-align: center;
-    color: rgba(0, 0, 0, 0.729);
-}
-.navi i{
-    width: 100%;
-    height: 100%;
-    font-size: 40px;
-}
-.navi h1
-{
-    font-size: 15px;
-    font-weight: 300;
-}
-#gifts img{
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-}
 
-#top-nav
-{
-    position: absolute;
-    height: 5vw;
-    width: calc(100% - 5vw);
-    left: 5vw;
-    display: flex;
-}
-#tnl
-{
-    position: relative;
-    height: 100%;
-    width: 50%;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    padding-left: 20px;
-}
-#search
-{
-    width: 40%;
-    height: 60%;
-    border-radius: 20px;
-    padding: 10px 15px;
-    border: 1px solid rgba(0, 0, 0, 0.433);
-}
-#searchdiv
-{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-#circle
-{
-    width: 5vh;
-    height: 5vh;
-    border-radius: 50%;
-    background-color: #07142C;
-    display : flex;
-    justify-content: center;
-    align-items: center;
-}
-#circle i
-{
-    color: white;
-    font-size: 20px;
-}
-#search h1
-{
-    font-size: 12px;
-    font-weight: 300;
-    color: black;
-    opacity: .7;
-}
-#tnr
-{
-    position: relative;
-    height: 100%;
-    display: flex;
-    left: 12%;
-    padding-left: 12%;
-    width: calc(50% - 12%);
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-#signin
-{
-    width: 22%;
-    height: 45%;
-    background-color: blue;
-    border-radius: 4px;
-    display: flex;
-    white-space: nowrap;
-    justify-content: center;
-    align-items: center;
-}
-#signin h1
-{
-    color : white;
-    font-weight: 400;
-    font-size: 20px;
-    text-transform: uppercase;
-}
-#brows
-{
-    width: 3vw;
-    height: 3vw;
-    background-color: rgba(128, 128, 128, 0.293);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#brows i{
-    font-size: 20px;
-    color: black;
 
-}
-#cart
-{
-    width: 3vw;
-    height: 3vw;
-    background-color: rgba(128, 128, 128, 0.293);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#cart i
-{
-    font-size: 20px;
-    color: black;
-}
-#top
-{
-    position: absolute;
-    width: calc(100% - 5vw);
-    height: 40%;
-    left: 5vw;
-    top : 5vw;
-    background-color: antiquewhite;
-}
-#bottum
-{
-    position: absolute;
-    width: calc(100% - 5vw);
-    height: calc(100% - 40% - 5vw);
-    left: 5vw;
-    top : calc(40% + 5vw);
-    background-color: rgb(104, 158, 140);
-}
+    #mainu-text {
+        position: absolute;
+        z-index: 99;
+        height: 100%;
+        overflow-y: auto;
+        gap: 4vh;
+        width: 40vw;
+        padding-left: 7vw;
+        background-color:white;
+        display: flex;
+        flex-direction: column;
+        left: -100%;
+        opacity: 0;
+        transition: all cubic-bezier(0.165, 0.84, 0.44, 1) .5s;
+    }
+    #mainu-text h3{
+        padding-left: 2vw;
+    }
+    #mainu-text::-webkit-scrollbar{display: none;}
+    
+    
+    #mainu-text a{
+        padding-left: 3vw;
+        width: 90%;
+        display: block;
+        text-decoration: none;
+        font-weight: 300;
+        transition: all cubic-bezier(0.165, 0.84, 0.44, 1) .5s;
+        color: black;
+    }
+    #mainu-text a:hover{
+        background-color: black;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        padding: 15px 15px;
+        color: #fff;
+    }
+    #mainu-text h3:hover
+    { 
+        font-size: 20px;
+    }
+    
+    
+    .gift{
+        position: relative;
+        height: 100%;
+        width: 45vw;
+       left: 5vw;
+       padding-left: 6vw;
+       overflow-y: auto;
+       overflow-x: hidden;
+        background-color: #fff;
+        z-index: 99;
+        left: -100%;
+        opacity: 0;
+        transition: all cubic-bezier(0.165, 0.84, 0.44, 1) .5s;
+    
+        
+    }
+    .gift::-webkit-scrollbar{display: none;}
+    .gift h1{
+        position: relative;
+        font-size: 50px;
+        left: 10vw;
+        padding-bottom: 1vw;
+    }
+    .giftCart{
+    
+        height: 14vw;
+        width: 16vw;
+        margin: 1vw;
+        display:inline-block;
+        text-align: center;
+        box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+    }
+    .giftCart h4{
+        padding-top: 5px;
+        font-weight: 400;
+    
+    }
+    .giftCart h4:hover{
+        color: orange;
+    }
+    
+    .giftCart:hover{
+        scale:1.1;
+    }
+    
+    #image{
+       
+        height: 12vw;
+        width: 16vw;
+        overflow: hidden;
+    }
+    #image img{
+       
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    #trending{
+          position: absolute;
+         height: 100%;
+         width: 45vw;
+         padding-left: 5vw;
+         top: 0;
+         left: 5vw;
+         left: -100%;
+         overflow-x: hidden;
+         overflow-y: auto;
+         
+         background-color: #fff;
+    }
+    #trending .creator{
+        margin: 2vw;
+        position: relative;
+        display: inline-block;
+        height: 12vw;
+        width: 14vw;
+        box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+    
+       overflow: hidden;
+        background-size: cover;
+    }
+    #trending .creator img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    #trending .creator:hover{
+        scale: 1.1;
+    }
+    
+    #trending .creator .circle{
+        position: absolute;
+        bottom:0%;
+        right:0%;
+        height: 7vw;
+        width: 7vw;
+        border-radius: 50%;
+        background-color: #fff;
+    }
+    #mystuff{ 
+        position: absolute;
+        height: 100%;
+        width: 45vw;
+        padding-left: 5vw;
+       
+       top: 0;
+      left: 4vw;
+      left: -100%;
+       overflow-x: hidden;
+       overflow-y: auto;
+        background-color: #fff;
+        text-align: center;
+    
+    }
+    #mystuff h1{
+        font-size: 50px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }#mystuff p{
+        font-size: small;
+          font-weight: 500; 
+         letter-spacing: 1px; 
+        margin: 5px; 
+        text-align: left; 
+        padding-left: 20px;  
+    
+    }
+    
+    
+    #mystuff video{
+        position:relative;
+        top:20px;
+        margin: 20px 0;
+        height: 400px;
+        width: 100%;
+        border:none;
+    }
+    .btn{
+        color: #fff;
+        padding: 15px 40px;
+        margin: 12px;
+        font-size: 20px;
+    
+        /* border-radius: 15px; */
+        border: none;
+        background-color: royalblue;
+    }
+    .btn:hover
+    {
+        color: royalblue;
+        background-color: #fff;
+        border: 2px solid blue;
+    }
+    #mystuff h3{
+       margin: 40px;
+        font-size: 25px;
+    }
+    
+    #mystuff h4{
+        font-weight: 400;
+        line-height: 35px;
+        font-size: 20px;
+    }
+    #mystuff #myart{
+    
+     position:relative;
+        
+        margin: 20px 0;
+        height: 400px;
+        width: 100%;
+        border:none;
+        overflow: hidden;
+    }
+    #myartt img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    #mystuff::-webkit-scrollbar{display: none;}
+    #liveside{ 
+        position: absolute;
+        height: 100%;
+        width: 45vw;
+        padding-left: 5vw;
+       
+       top: 0;
+      left: 4vw;
+      left: -100%;
+       overflow-x: hidden;
+       overflow-y: auto;
+        background-color: #fff;
+        text-align: center;
+    
+    }
