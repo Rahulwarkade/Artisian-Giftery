@@ -103,6 +103,9 @@ overlay.addEventListener("click",function()
         
 })
 
+
+
+
 var tl = gsap.timeline()
 tl.to("#itm3 h1",
 {
@@ -217,6 +220,7 @@ tl.to("#itm3 h1",
     duration : 3,
 },"same1")
 
+
 var button = document.querySelector("#itm3 button");
 
 button.addEventListener("click",function()
@@ -319,45 +323,750 @@ button.addEventListener("click",function()
     {
         display: "none",
     },"same2")
+    .to("#bottum #wraper",
+    {
+        display : "initial",
+    })
+    .to("#wraper .clmA img",
+    {
+        scale : 1,
+        transition : "all cubic-bezier(0.19, 1, 0.22, 1) 1s",
+        duration : 4,
+    })
 })
 
-var arr = [{img:"lmn.png"},
-{img:".png"},
-{img:"lmn.png"},
-{img:"lmn.png"},
-{img:"lmn.png"},
-{img:"lmn.png"},
-{img:"lmn.png"},
-{img:"lmn.png"},
-{img:"lmn.png"},
-{img:"lmn.png"}
+
+var arr = [
+{id : "id0", img:"Images/brass-product/Camel/p1/i1.png",img2:"Images/brass-product/Camel/p1/i2.png",
+img3:"Images/brass-product/Camel/p1/i3.png",img4:"Images/brass-product/Camel/p1/i4.png",imgid: "A"},
+
+{id : "id1", img:"Images/brass-product/Camel/p1/i1.png",img2:"Images/brass-product/Camel/p1/i2.png",
+img3:"Images/brass-product/Camel/p1/i3.png",img4:"Images/brass-product/Camel/p1/i4.png",imgid: "B"},
+
+{id : "id2", img:"Images/brass-product/Camel/p1/i1.png",img2:"Images/brass-product/Camel/p1/i2.png",
+img3:"Images/brass-product/Camel/p1/i3.png",img4:"Images/brass-product/Camel/p1/i4.png",imgid: "C"},
+
+{id : "id3", img:"Images/brass-product/Camel/p1/i1.png",img2:"Images/brass-product/Camel/p1/i2.png",
+img3:"Images/brass-product/Camel/p1/i3.png",img4:"Images/brass-product/Camel/p1/i4.png",imgid: "D"},
+
+{id : "id4", img:"Images/brass-product/Camel/p1/i1.png",img2:"Images/brass-product/Camel/p1/i2.png",
+img3:"Images/brass-product/Camel/p1/i3.png",img4:"Images/brass-product/Camel/p1/i4.png",imgid: "E"},
+
+{id : "id5", img:"Images/brass-product/Camel/p1/i1.png",img2:"Images/brass-product/Camel/p1/i2.png",
+img3:"Images/brass-product/Camel/p1/i3.png",img4:"Images/brass-product/Camel/p1/i4.png",imgid: "F"},
+
+{id : "id6", img:"Images/brass-product/Camel/p1/i1.png",img2:"Images/brass-product/Camel/p1/i2.png",
+img3:"Images/brass-product/Camel/p1/i3.png",img4:"Images/brass-product/Camel/p1/i4.png",imgid: "G"},
+
+{id : "id7", img:"Images/brass-product/Camel/p1/i1.png",img2:"Images/brass-product/Camel/p1/i2.png",
+img3:"Images/brass-product/Camel/p1/i3.png",img4:"Images/brass-product/Camel/p1/i4.png",imgid: "H"},
+
+{id : "id8", img:"Images/brass-product/Camel/p1/i1.png",img2:"Images/brass-product/Camel/p1/i2.png",
+img3:"Images/brass-product/Camel/p1/i3.png",img4:"Images/brass-product/Camel/p1/i4.png",imgid: "I"},
+
+{id : "id9", img:"Images/brass-product/Camel/p1/i1.png",img2:"Images/brass-product/Camel/p1/i2.png",
+img3:"Images/brass-product/Camel/p1/i3.png",img4:"Images/brass-product/Camel/p1/i4.png",imgid: "J"},
 ];
 
 var clutter = "";
-arr.forEach(function(val)
+arr.forEach(function(val,idx)
 {
     clutter = clutter + `               
-    <div class = "clmA">
-    <div id="A" class="alpha">
-        <img src="${val.img}" alt="loading">
+    <div id = "${val.id}" class = "clmA">
+    <div id="${val.imgid}1" class="alpha">
+        <img  src="${val.img}" alt="loading">
     </div>
-    <div class="beta">
-    <img src="${val.img}" alt="loading">
+    <div id="${val.imgid}2" class="beta">
+    <img  src="${val.img2}" alt="loading">
     </div>
-    <div class="charlie">
-    <img src="${val.img}" alt="loading">
+    <div id="${val.imgid}3" class="charlie">
+    <img  src="${val.img3}" alt="loading">
     </div>
-    <div class="delta">
-    <img src="${val.img}" alt="loading">
+    <div id="${val.imgid}4" class="delta">
+    <img  src="${val.img4}" alt="loading">
     </div>
-    <div class="echo">
-    <img src="${val.img}" alt="loading">
-    </div>
-    <div class="foxtrot">
-    <img src="${val.img}" alt="loading">
-    </div>
+ 
     </div>`
+    idx++
 });
 
 var columns = document.querySelector("#columns");
 columns.innerHTML = clutter;
+
+var A1 = document.querySelector("#A1");
+var A2 = document.querySelector("#A2");
+var A3 = document.querySelector("#A3");
+var A4 = document.querySelector("#A4");
+
+var B1 = document.querySelector("#B1");
+var B2 = document.querySelector("#B2");
+var B3 = document.querySelector("#B3");
+var B4 = document.querySelector("#B4");
+
+var C1 = document.querySelector("#C1");
+var C2 = document.querySelector("#C2");
+var C3 = document.querySelector("#C3");
+var C4 = document.querySelector("#C4");
+
+var D1 = document.querySelector("#D1");
+var D2 = document.querySelector("#D2");
+var D3 = document.querySelector("#D3");
+var D4 = document.querySelector("#D4");
+
+var E1 = document.querySelector("#E1");
+var E2 = document.querySelector("#E2");
+var E3 = document.querySelector("#E3");
+var E4 = document.querySelector("#E4");
+
+var F1 = document.querySelector("#F1");
+var F2 = document.querySelector("#F2");
+var F3 = document.querySelector("#F3");
+var F4 = document.querySelector("#F4");
+
+var G1 = document.querySelector("#G1");
+var G2 = document.querySelector("#G2");
+var G3 = document.querySelector("#G3");
+var G4 = document.querySelector("#G4");
+
+var H1 = document.querySelector("#H1");
+var H2 = document.querySelector("#H2");
+var H3 = document.querySelector("#H3");
+var H4 = document.querySelector("#H4");
+
+var I1 = document.querySelector("#I1");
+var I2 = document.querySelector("#I2");
+var I3 = document.querySelector("#I3");
+var I4 = document.querySelector("#I4");
+
+var J1 = document.querySelector("#J1");
+var J2 = document.querySelector("#J2");
+var J3 = document.querySelector("#J3");
+var J4 = document.querySelector("#J4");
+
+
+var flag = true;
+function animation()
+{
+    flag = false;
+    var tl3 = gsap.timeline();
+    tl3.to("#id0",
+    {
+      position : "absolute",
+      left : "-20%",
+      duration : 2,
+    },"juliet")
+    .to("#id1",
+    {
+      position : "absolute",
+      left : "-20%",
+      duration : 2,
+    },"juliet")
+    .to("#id2",
+    {
+      position : "absolute",
+      left : "0%",
+      duration : 2,
+    },"juliet")
+  
+    .to("#id3",
+    {
+      position : "absolute",
+      left : "10%",
+      duration : 2,
+    },"juliet")
+    .to("#id4",
+    {
+      position : "absolute",
+      left : "20%",
+      duration : 2,
+    },"juliet")
+    .to("#id5",
+    {
+      position : "absolute",
+      right : "20%",
+      duration : 2,
+    },"juliet")
+    .to("#id6",
+    {
+      position : "absolute",
+      right : "10%",
+      duration : 2,
+    },"juliet")
+    .to("#id7",
+    {
+      position : "absolute",
+      right : "0%",
+      duration : 2,
+    },"juliet")
+    .to("#id8",
+    {
+      position : "absolute",
+      right : "-20%",
+      duration : 2,
+    },"juliet")
+    .to("#id9",
+    {
+      position : "absolute",
+      right : "-20%",
+      duration : 2,
+    },"juliet")  
+}
+
+A1.addEventListener("click",function(det)
+{
+    if(flag)
+    {
+        animation();
+    }
+    gsap.to("#A1",
+    {
+        position : "absolute",
+        duration : 2,
+        left : "650%",
+        top : "40%",
+        scale : 2,
+    })
+})
+A2.addEventListener("click",function(det)
+{
+    if(flag)
+    {
+        animation();
+    }
+    gsap.to("#A2",
+    {
+        position : "absolute",
+        duration : 2,
+        left : "650%",
+        top : "40%",
+        scale : 2,
+    })
+})
+A3.addEventListener("click",function(det)
+{
+    if(flag)
+    {
+        animation();
+    }
+    gsap.to("#A3",
+    {
+        position : "absolute",
+        duration : 2,
+        left : "650%",
+        top : "40%",
+        scale : 2,
+    })
+})
+A4.addEventListener("click",function(det)
+{
+    if(flag)
+    {
+        animation();
+    }
+    console.log(det.target);
+    gsap.to("#A4",
+    {
+        position : "absolute",
+        duration : 2,
+        left : "650%",
+        top : "40%",
+        scale : 2,
+    })
+})
+
+B1.addEventListener("click",function(det)
+{
+    if(flag)
+    {
+        animation();
+    }
+    gsap.to("#B1",
+    {
+        position : "absolute",
+        duration : 2,
+        left : "650%",
+        top : "40%",
+        scale : 2,
+    })
+})
+B2.addEventListener("click",function(det)
+{
+    if(flag)
+    {
+        animation();
+    }
+    gsap.to("#B2",
+    {
+        position : "absolute",
+        duration : 2,
+        left : "650%",
+        top : "40%",
+        scale : 2,
+    })
+})
+B3.addEventListener("click",function(det)
+{
+    if(flag)
+    {
+        animation();
+    }
+    gsap.to("#B3",
+    {
+        position : "absolute",
+        duration : 2,
+        left : "650%",
+        top : "40%",
+        scale : 2,
+    })
+})
+B4.addEventListener("click",function(det)
+{
+    if(flag)
+    {
+        animation();
+    }
+    console.log(det.target);
+    gsap.to("#B4",
+    {
+        position : "absolute",
+        duration : 2,
+        left : "650%",
+        top : "40%",
+        scale : 2,
+    })
+})
+
+function c1()
+{
+    gsap.to("#C2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#C3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#C4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+}
+function c2()
+{
+    gsap.to("#C1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#C3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#C4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+}
+function c3()
+{
+    gsap.to("#C1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#C2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#C4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+}
+function c4()
+{
+    gsap.to("#C1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#C2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#C3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+}
+C1.addEventListener("click",function(det)
+{    if(flag)
+    {
+        animation();
+    }
+    c1();
+    gsap.to("#C1",
+    {
+        position : "absolute",
+        duration : 2,
+        left : "460%",
+        top : "40%",
+        scale : 2,
+    })
+})
+C2.addEventListener("click",function(det)
+{
+    if(flag)
+    {
+        animation();
+    }
+    c2();
+    gsap.to("#C2",
+    {
+        position : "absolute",
+        duration : 2,
+        left : "460%",
+        top : "40%",
+        scale : 2,
+    })
+})
+C3.addEventListener("click",function(det)
+{
+    if(flag)
+    {
+        animation();
+    }
+    c3();
+    gsap.to("#C3",
+    {
+        position : "absolute",
+        duration : 2,
+        left : "460%",
+        top : "40%",
+        scale : 2,
+    })
+})
+C4.addEventListener("click",function(det)
+{
+    if(flag)
+    {
+        animation();
+    }
+    c4();
+    console.log(det.target);
+    gsap.to("#C4",
+    {
+        position : "absolute",
+        duration : 2,
+        left : "460%",
+        top : "40%",
+        scale : 2,
+    })
+})
+function d1()
+{
+    gsap.to("#D2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#D3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#D4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+}
+function d2()
+{
+    gsap.to("#D1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#D3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#D4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+}
+function d3()
+{
+    gsap.to("#D1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#D2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#D4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+}
+function d4()
+{
+    gsap.to("#D1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#D2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#D3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+}
+D1.addEventListener("click",function(det)
+{
+    animation();
+    d1();
+    gsap.to("#D1",
+    {
+        position : "absolute",
+        duration : 2,
+        left : "330%",
+        top : "40%",
+        scale : 2,
+    })
+})
+D2.addEventListener("click",function(det)
+{
+    if(flag)
+    {
+        animation();
+    }
+    d2();
+    gsap.to("#D2",
+    {
+        position : "absolute",
+        duration : 2,
+        left : "330%",
+        top : "40%",
+        scale : 2,
+    })
+})
+D3.addEventListener("click",function(det)
+{
+    if(flag)
+    {
+        animation();
+    }
+    d3();
+    gsap.to("#D3",
+    {
+        position : "absolute",
+        duration : 2,
+        left : "330%",
+        top : "40%",
+        scale : 2,
+    })
+})
+D4.addEventListener("click",function(det)
+{
+    if(flag)
+    {
+        animation();
+    }
+    d3();
+    console.log(det.target);
+    gsap.to("#D4",
+    {
+        position : "absolute",
+        duration : 2,
+        left : "330%",
+        top : "40%",
+        scale : 2,
+    })
+})
+
+
+/*
+// var friend = document.querySelector("h1");
+// var b = document.querySelector("button");
+// var flag = 0;
+// var timer;
+// b.addEventListener("click",function(){
+//     if(flag ===0)
+//     {
+//         friend.style.color = "rgb(205, 212, 0)";
+//         friend.textContent = "requested";
+//         b.textContent = "remove friend";
+//         b.style.backgroundColor = "red";
+//         timer = setTimeout(function(){
+//             friend.style.color = "green";
+//             friend.textContent = "Friend";
+//         },2000);
+//     flag = 1;
+//     }
+//     else{
+//         friend.style.color = "rgb(230, 161, 161)";
+//         friend.textContent = "stranger";
+//         b.textContent = "Add friend";
+//         b.style.backgroundColor = "green";
+//         clearTimeout(timer);
+//     flag = 0;
+//     }
+// });
+
+
+// var cluster = "";
+
+// arr.forEach(function(val,index){
+//     cluster = cluster+`<div id="card">
+//     <div id="pic">
+//     <img src="${val.img}" alt="">
+//     </div>
+//     <h1 id = status>${val.name}</h1>
+//     <div id="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente!
+//         Lorem ipsum dolor sit amet.
+//     </div>
+//     <button ">add friend</button>
+// </div>`;
+// console.log(index);
+// })
+var overlay = document.querySelector("#overlay");
+var arr = [
+    {name:"Alpha",img:"https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1727&q=80",status:"Strenger"},
+    {name:"Beta",img:"https://images.unsplash.com/photo-1606122017369-d782bbb78f32?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1964&q=80",status:"Strenger"},
+    {name:"Gama",img:"https://images.unsplash.com/photo-1611558709798-e009c8fd7706?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1891&q=80",status:"Strenger"},
+];
+var show = function(){
+    var cluster = "";
+    var index = 0;
+
+    arr.forEach(function(val){
+        cluster = cluster+`<div id="card">
+        <div id="pic">
+        <img src="${val.img}" alt="">
+        </div>
+        <h1 id = "name">${val.name}</h1>
+        <h3 id = "${val.status}"> ${val.status}</h1>
+        <div id="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente!
+            Lorem ipsum dolor sit amet.
+        </div>
+        <button class = "${val.status}" id=${index}>${(val.status==="Strenger")?"Add Friend":"Remove Friend"}</button>
+    </div>`;
+    index++;
+    });
+   overlay.innerHTML = cluster;
+
+}
+var flag = 0;
+var timer;
+
+show();
+overlay.addEventListener("click",function(det){
+    if(flag===0){
+            arr[det.target.id].status = "Friend";
+        show();
+        flag =1;
+    }
+    else{
+        arr[det.target.id].status = "Strenger";
+        flag = 0
+        show();
+    }     
+})
+
+
+*/
