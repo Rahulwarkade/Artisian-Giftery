@@ -336,38 +336,89 @@ button.addEventListener("click",function()
 })
 
 
+// var arr = [
+// {id : "id0", img:"Images/brass-product/Camel/p1/i1.png",img2:"Images/brass-product/Camel/p1/i2.png",
+// img3:"Images/brass-product/Camel/p1/i3.png",img4:"Images/brass-product/Camel/p1/i4.png",imgid: "A"},
+
+// {id : "id1", img:"Images/brass-product/Camel/p1/i1.png",img2:"Images/brass-product/Camel/p1/i2.png",
+// img3:"Images/brass-product/Camel/p1/i3.png",img4:"Images/brass-product/Camel/p1/i4.png",imgid: "B"},
+
+// {id : "id2", img:"Images/brass-product/Camel/p1/i1.png",img2:"Images/brass-product/Camel/p1/i2.png",
+// img3:"Images/brass-product/Camel/p1/i3.png",img4:"Images/brass-product/Camel/p1/i4.png",imgid: "C"},
+
+// {id : "id3", img:"Images/brass-product/Camel/p1/i1.png",img2:"Images/brass-product/Camel/p1/i2.png",
+// img3:"Images/brass-product/Camel/p1/i3.png",img4:"Images/brass-product/Camel/p1/i4.png",imgid: "D"},
+
+// {id : "id4", img:"Images/brass-product/Camel/p1/i1.png",img2:"Images/brass-product/Camel/p1/i2.png",
+// img3:"Images/brass-product/Camel/p1/i3.png",img4:"Images/brass-product/Camel/p1/i4.png",imgid: "E"},
+
+// {id : "id5", img:"Images/brass-product/Camel/p1/i1.png",img2:"Images/brass-product/Camel/p1/i2.png",
+// img3:"Images/brass-product/Camel/p1/i3.png",img4:"Images/brass-product/Camel/p1/i4.png",imgid: "F"},
+
+// {id : "id6", img:"Images/brass-product/Camel/p1/i1.png",img2:"Images/brass-product/Camel/p1/i2.png",
+// img3:"Images/brass-product/Camel/p1/i3.png",img4:"Images/brass-product/Camel/p1/i4.png",imgid: "G"},
+
+// {id : "id7", img:"Images/brass-product/Camel/p1/i1.png",img2:"Images/brass-product/Camel/p1/i2.png",
+// img3:"Images/brass-product/Camel/p1/i3.png",img4:"Images/brass-product/Camel/p1/i4.png",imgid: "H"},
+
+// {id : "id8", img:"Images/brass-product/Camel/p1/i1.png",img2:"Images/brass-product/Camel/p1/i2.png",
+// img3:"Images/brass-product/Camel/p1/i3.png",img4:"Images/brass-product/Camel/p1/i4.png",imgid: "I"},
+
+// {id : "id9", img:"Images/brass-product/Camel/p1/i1.png",img2:"Images/brass-product/Camel/p1/i2.png",
+// img3:"Images/brass-product/Camel/p1/i3.png",img4:"Images/brass-product/Camel/p1/i4.png",imgid: "J"},
+// ];
+
 var arr = [
-{id : "id0", img:"Images/brass-product/Camel/p1/i1.png",img2:"Images/brass-product/Camel/p1/i2.png",
-img3:"Images/brass-product/Camel/p1/i3.png",img4:"Images/brass-product/Camel/p1/i4.png",imgid: "A"},
-
-{id : "id1", img:"Images/brass-product/Camel/p1/i1.png",img2:"Images/brass-product/Camel/p1/i2.png",
-img3:"Images/brass-product/Camel/p1/i3.png",img4:"Images/brass-product/Camel/p1/i4.png",imgid: "B"},
-
-{id : "id2", img:"Images/brass-product/Camel/p1/i1.png",img2:"Images/brass-product/Camel/p1/i2.png",
-img3:"Images/brass-product/Camel/p1/i3.png",img4:"Images/brass-product/Camel/p1/i4.png",imgid: "C"},
-
-{id : "id3", img:"Images/brass-product/Camel/p1/i1.png",img2:"Images/brass-product/Camel/p1/i2.png",
-img3:"Images/brass-product/Camel/p1/i3.png",img4:"Images/brass-product/Camel/p1/i4.png",imgid: "D"},
-
-{id : "id4", img:"Images/brass-product/Camel/p1/i1.png",img2:"Images/brass-product/Camel/p1/i2.png",
-img3:"Images/brass-product/Camel/p1/i3.png",img4:"Images/brass-product/Camel/p1/i4.png",imgid: "E"},
-
-{id : "id5", img:"Images/brass-product/Camel/p1/i1.png",img2:"Images/brass-product/Camel/p1/i2.png",
-img3:"Images/brass-product/Camel/p1/i3.png",img4:"Images/brass-product/Camel/p1/i4.png",imgid: "F"},
-
-{id : "id6", img:"Images/brass-product/Camel/p1/i1.png",img2:"Images/brass-product/Camel/p1/i2.png",
-img3:"Images/brass-product/Camel/p1/i3.png",img4:"Images/brass-product/Camel/p1/i4.png",imgid: "G"},
-
-{id : "id7", img:"Images/brass-product/Camel/p1/i1.png",img2:"Images/brass-product/Camel/p1/i2.png",
-img3:"Images/brass-product/Camel/p1/i3.png",img4:"Images/brass-product/Camel/p1/i4.png",imgid: "H"},
-
-{id : "id8", img:"Images/brass-product/Camel/p1/i1.png",img2:"Images/brass-product/Camel/p1/i2.png",
-img3:"Images/brass-product/Camel/p1/i3.png",img4:"Images/brass-product/Camel/p1/i4.png",imgid: "I"},
-
-{id : "id9", img:"Images/brass-product/Camel/p1/i1.png",img2:"Images/brass-product/Camel/p1/i2.png",
-img3:"Images/brass-product/Camel/p1/i3.png",img4:"Images/brass-product/Camel/p1/i4.png",imgid: "J"},
-];
-
+    {id : "id0", img:"Images/bobo-handpainted-indian-vehicles/Truck/i4.png",
+    img2:"Images/metal-cup/p1/i2.png",
+    img3:"Images/Metal-glass/p1/i1.png",
+    img4:"Images/pen-holder/p2/i1.png",imgid: "A"},
+    
+    {id : "id1", img:"Images/Personalised-Notebook-cover/i2.png",
+    img2:"Images/Printed-Indian-cup/i3.png",
+    img3:"Images/Tissue-Napekin-Holder/p2/i2.png",
+    img4:"Images/hanging-wall/p4/i3.png",imgid: "B"},
+    
+    {id : "id2", img:"Images/indian-spice-collection-box/p1/i1.png",
+    img2:"Images/decotative-toy/p4/i3.png",
+    img3:"Images/Wooden-wall-hanger-spoons-for-home/Warli-Art/p1/i1.png",
+    img4:"Images/HandMade-bag/Handicraft-ethnic-vintage-banjara-handmade-handbag/p1/i1.png",imgid: "C"},
+    
+    {id : "id3", img:"Images/HandMade-bag/Poly-Dopin-pouch-with-tassel-attached-for-women/p5/i2.png",
+    img2:"Images/HandMade-bag/Real-banjara-bag/p1/i3.png",
+    img3:"Images/Handmade-Moblile-pursh-with-name/i3.png",
+    img4:"Images/tree-shape-jwellery-stand-or-bangle-holder/tree-carving-antique-black/p1/i2.png",imgid: "D"},
+    
+    {id : "id4", img:"Images/Wooden-drink-coaster-Mandala/Flower-Shaped/p1/i1.png",
+    img2:"Images/Wooden-Jewelry/IndianHandmadeCarvingBox/p3/i3.png",
+    img3:"Images/Wooden-Jewelry/IndianHandmadeCarvingBox/p11/i2.png",
+    img4:"Images/Wooden-Jewelry/wooden-and-brass-handmade/p7/i1.png",imgid: "E"},
+    
+    {id : "id5", img:"Images/wooden-Tradition-item/p2/i1.png",
+    img2:"Images/Wooden-Folding-bangle-stand-holder/p1/i3.png",
+    img3:"Images/metal-cup/p2/i4.png",
+    img4:"Images/Dhoop-stand/Meditating-buddha/p3/i1.png",imgid: "F"},
+    
+    {id : "id6", img:"Images/Golden-Handcrafted-Palm-buddha/p1/i2.png",
+    img2:"Images/wooden-Tradition-item/p1/i1.png",
+    img3:"Images/Wooden-wall-hanger-spoons-for-home/RajasthaniCulture/p1/i1.png",
+    img4:"Images/HandMade-bag/Poly-Dopin-pouch-with-tassel-attached-for-women/p3/i1.png",imgid: "G"},
+    
+    {id : "id7", img:"Images/tree-shape-jwellery-stand-or-bangle-holder/tree-carving-sheesham-Handicraft/p5/i2.png",
+    img2:"Images/brass-product/Scooter/p1/i4.png",
+    img3:"Images/Wooden-drink-coaster-Mandala/Square-shaped-text/p1/i5.png",
+    img4:"Images/Wooden-Jewelry/wooden-and-brass-handmade/p4/i3.png",imgid: "H"},
+    
+    {id : "id8", img:"Images/decotative-toy/p1/i3.png",
+    img2:"Images/decotative-toy/p5/i5.png",
+    img3:"Images/hanging-wall/p1/i1.png",
+    img4:"Images/woodchair.JPEG",imgid: "I"},
+    
+    {id : "id9", img:"Images/bamboo_art-tractor.png",
+    img2:"Images/craftart-bucket.JPG",
+    img3:"Images/top.png",
+    img4:"Images/Hangling-Text/p1/i1.png",imgid: "J"},
+    ];
 var clutter = "";
 arr.forEach(function(val,idx)
 {
@@ -978,6 +1029,818 @@ D4.addEventListener("click",function(det)
         scale : 2,
     })
 })
+
+function e1()
+{
+    gsap.to("#E2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#E3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#E4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+}
+function e2()
+{
+    gsap.to("#E1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#E3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#E4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+}
+function e3()
+{
+    gsap.to("#E1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#E2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#E4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+}
+function e4()
+{
+    gsap.to("#E1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#E2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#E3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+}
+E1.addEventListener("click",function(det)
+{
+    animation();
+    e1();
+    gsap.to("#E1",
+    {
+        position : "absolute",
+        duration : 2,
+        left : "230%",
+        top : "40%",
+        scale : 2,
+    })
+})
+E2.addEventListener("click",function(det)
+{
+    if(flag)
+    {
+        animation();
+    }
+    e2();
+    gsap.to("#E2",
+    {
+        position : "absolute",
+        duration : 2,
+        left : "230%",
+        top : "40%",
+        scale : 2,
+    })
+})
+E3.addEventListener("click",function(det)
+{
+    if(flag)
+    {
+        animation();
+    }
+    e3();
+    gsap.to("#E3",
+    {
+        position : "absolute",
+        duration : 2,
+        left : "230%",
+        top : "40%",
+        scale : 2,
+    })
+})
+E4.addEventListener("click",function(det)
+{
+    if(flag)
+    {
+        animation();
+    }
+    e4();
+    gsap.to("#E4",
+    {
+        position : "absolute",
+        duration : 2,
+        left : "230%",
+        top : "40%",
+        scale : 2,
+    })
+})
+
+J1.addEventListener("click",function(det)
+{
+    if(flag)
+    {
+        animation();
+    }
+    gsap.to("#J1",
+    {
+        position : "absolute",
+        duration : 2,
+        right : "650%",
+        top : "40%",
+        scale : 2,
+    })
+})
+J2.addEventListener("click",function(det)
+{
+    if(flag)
+    {
+        animation();
+    }
+    gsap.to("#J2",
+    {
+        position : "absolute",
+        duration : 2,
+        right : "650%",
+        top : "40%",
+        scale : 2,
+    })
+})
+J3.addEventListener("click",function(det)
+{
+    if(flag)
+    {
+        animation();
+    }
+    gsap.to("#J3",
+    {
+        position : "absolute",
+        duration : 2,
+        right : "650%",
+        top : "40%",
+        scale : 2,
+    })
+})
+J4.addEventListener("click",function(det)
+{
+    if(flag)
+    {
+        animation();
+    }
+    gsap.to("#J4",
+    {
+        position : "absolute",
+        duration : 2,
+        right : "650%",
+        top : "40%",
+        scale : 2,
+    })
+})
+
+I1.addEventListener("click",function(det)
+{
+    if(flag)
+    {
+        animation();
+    }
+    gsap.to("#I1",
+    {
+        position : "absolute",
+        duration : 2,
+        right : "650%",
+        top : "40%",
+        scale : 2,
+    })
+})
+I2.addEventListener("click",function(det)
+{
+    if(flag)
+    {
+        animation();
+    }
+    gsap.to("#I2",
+    {
+        position : "absolute",
+        duration : 2,
+        right : "650%",
+        top : "40%",
+        scale : 2,
+    })
+})
+I3.addEventListener("click",function(det)
+{
+    if(flag)
+    {
+        animation();
+    }
+    gsap.to("#I3",
+    {
+        position : "absolute",
+        duration : 2,
+        right : "650%",
+        top : "40%",
+        scale : 2,
+    })
+})
+I4.addEventListener("click",function(det)
+{
+    if(flag)
+    {
+        animation();
+    }
+    console.log(det.target);
+    gsap.to("#I4",
+    {
+        position : "absolute",
+        duration : 2,
+        right : "650%",
+        top : "40%",
+        scale : 2,
+    })
+})
+
+function f1()
+{
+    gsap.to("#F2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#F3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#F4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+}
+function f2()
+{
+    gsap.to("#F1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#F3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#F4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+}
+function f3()
+{
+    gsap.to("#F1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#F2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#F4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+}
+function f4()
+{
+    gsap.to("#F1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#F2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#F3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+}
+F1.addEventListener("click",function(det)
+{    if(flag)
+    {
+        animation();
+    }
+    f1();
+    gsap.to("#F1",
+    {
+        position : "absolute",
+        duration : 2,
+        right : "230%",
+        top : "40%",
+        scale : 2,
+    })
+})
+F2.addEventListener("click",function(det)
+{
+    if(flag)
+    {
+        animation();
+    }
+    f2();
+    gsap.to("#F2",
+    {
+        position : "absolute",
+        duration : 2,
+        right : "230%",
+        top : "40%",
+        scale : 2,
+    })
+})
+F3.addEventListener("click",function(det)
+{
+    if(flag)
+    {
+        animation();
+    }
+    f3();
+    gsap.to("#F3",
+    {
+        position : "absolute",
+        duration : 2,
+        right : "230%",
+        top : "40%",
+        scale : 2,
+    })
+})
+F4.addEventListener("click",function(det)
+{
+    if(flag)
+    {
+        animation();
+    }
+    f4();
+    console.log(det.target);
+    gsap.to("#F4",
+    {
+        position : "absolute",
+        duration : 2,
+        right : "230%",
+        top : "40%",
+        scale : 2,
+    })
+})
+
+function g1()
+{
+    gsap.to("#G2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#G3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#G4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+}
+function g2()
+{
+    gsap.to("#G1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#G3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#G4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+}
+function g3()
+{
+    gsap.to("#G1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#G2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#G4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+}
+function g4()
+{
+    gsap.to("#G1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#G2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#G3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+}
+G1.addEventListener("click",function(det)
+{
+    animation();
+    g1();
+    gsap.to("#G1",
+    {
+        position : "absolute",
+        duration : 2,
+        right : "330%",
+        top : "40%",
+        scale : 2,
+    })
+})
+G2.addEventListener("click",function(det)
+{
+    if(flag)
+    {
+        animation();
+    }
+    g2();
+    gsap.to("#G2",
+    {
+        position : "absolute",
+        duration : 2,
+        right : "330%",
+        top : "40%",
+        scale : 2,
+    })
+})
+G3.addEventListener("click",function(det)
+{
+    if(flag)
+    {
+        animation();
+    }
+    g3();
+    gsap.to("#G3",
+    {
+        position : "absolute",
+        duration : 2,
+        right : "330%",
+        top : "40%",
+        scale : 2,
+    })
+})
+G4.addEventListener("click",function(det)
+{
+    if(flag)
+    {
+        animation();
+    }
+    g4();
+    gsap.to("#G4",
+    {
+        position : "absolute",
+        duration : 2,
+        right : "330%",
+        top : "40%",
+        scale : 2,
+    })
+})
+
+function h1()
+{
+    gsap.to("#H2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#H3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#H4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+}
+function h2()
+{
+    gsap.to("#H1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#H3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#H4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+}
+function h3()
+{
+    gsap.to("#H1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#H2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#H4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+}
+function h4()
+{
+    gsap.to("#H1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#H2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#H3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+}
+H1.addEventListener("click",function(det)
+{
+    animation();
+    h1();
+    gsap.to("#H1",
+    {
+        position : "absolute",
+        duration : 2,
+        right : "230%",
+        top : "40%",
+        scale : 2,
+    })
+})
+H2.addEventListener("click",function(det)
+{
+    if(flag)
+    {
+        animation();
+    }
+    h2();
+    gsap.to("#H2",
+    {
+        position : "absolute",
+        duration : 2,
+        right : "230%",
+        top : "40%",
+        scale : 2,
+    })
+})
+H3.addEventListener("click",function(det)
+{
+    if(flag)
+    {
+        animation();
+    }
+    h3();
+    gsap.to("#H3",
+    {
+        position : "absolute",
+        duration : 2,
+        right : "230%",
+        top : "40%",
+        scale : 2,
+    })
+})
+H4.addEventListener("click",function(det)
+{
+    if(flag)
+    {
+        animation();
+    }
+    h4();
+    gsap.to("#H4",
+    {
+        position : "absolute",
+        duration : 2,
+        right : "230%",
+        top : "40%",
+        scale : 2,
+    })
+})
+
+
+
+
+
+
 
 
 /*
