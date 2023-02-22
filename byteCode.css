@@ -475,13 +475,15 @@
         background-size: 100% 100%;
         position: relative;
         left: -2%;
+        top : 6%;
     }
     #mid-itm2{
         background-image: url("Images/Dhoop-stand/Lord-shiva/p3/i2.png");
         background-size: 95% 114%;
         position: relative;
         background-repeat: no-repeat;
-        left: -100px;;
+        left: 0%;
+        top : 29%;
     }
     #mid-itm3{
         /* background-image: url("images/logo/logo3.png"); */
@@ -496,7 +498,8 @@
         background-image: url("images/decotative-toy/p5/i5.png");
         background-size: 100% 100%;
         position: relative;
-        right: -100px;
+        right: 0%;
+        top : 29%;
     }
     #mid-itm5{
         background-image: url("images/hanging-wall/p8/i1.png");
@@ -1217,49 +1220,75 @@
     justify-content: space-between;
     overflow : hidden;
 }
+
 #id0
 {
     position : absolute;
     overflow :visible;
     left : 0%;
+    height: 98%;
+    width: 10%;
 }
 #id1
 {
     position : absolute;
     left : 10%;
+    height: 98%;
+    width: 10%;
 }#id2
 {
     position : absolute;
     left : 20%;
+    height: 98%;
+    width: 10%;
 }#id3
 {
     position : absolute;
     left : 30%;
+    height: 98%;
+    width: 10%;
 }#id4
 {
     position : absolute;
     left : 40%;
+    height: 98%;
+    width: 10%;
 }#id5
 {
     position : absolute;
     right : 40%;
+    height: 98%;
+    width: 10%;
 }
 #id6
 {
     position : absolute;
     right : 30%;
+    height: 98%;
+    width: 10%;
 }#id7
 {
     position : absolute;
     right : 20%;
+    height: 98%;
+    width: 10%;
 }#id8
 {
     position : absolute;
     right : 10%;
+    height: 98%;
+    width: 10%;
 }#id9
 {
     position : absolute;
     right : 0%;
+    height: 98%;
+    width: 10%;
+}
+#id9 img
+{
+    width: 100%;
+    height: 100%;
 }
 .clmA
 {
@@ -1345,38 +1374,127 @@
 .delta img:hover{
     scale: 1.2;
 }
-/* .echo
+
+@media(max-width : 500px)
 {
-    width: 100%;
-    height: 16%;
-    transition: cubic-bezier(0.19, 1, 0.22, 1) 2s;
+    #itm3 h2 {
+        font-size : 24px;
+    }
+    #itm3 h1 {
+        font-size: 18px;
+    }
+    #itm3 button {
+        padding: 13px 33px;
+    }
+    #itm1{
+        display : none;
+    }
+    #itm2{
+        display : none;
+    }
+    #itm4{
+        display : none;
+    }
+    #itm5{
+        display : none;
+    }
+    #bt-itm1{
+        display: none;
+    }
+    #bt-itm2{
+        display: none;
+    }
+    #bt-itm3{
+        display: none;
+    }
+    #bt-itm4{
+        display: none;
+    }
+    #bt-itm5{
+        display: none;
+    }
+    .mid-itm{
+        display : none;
+    }
+    #id7{
+        display: none;
+    }
+    #id8{
+        display: none;
+    }
+    #id9{
+        display: none;
+    }
+    #id0{
+        display: none;
+    }
+    #id1{
+        display: none;
+    }
+    #id2{
+        display: none;
+    }
 
+    #id4
+    {
+        left : 20%;
+    }
+    #id5{
+        left: 55%;
+        top: 5%;
+    }
+    #id6
+    {
+        left: 83%;
+        top: 8%;
+    }
+    #id4 {
+        left: 4%;
+        top: 7%;
+    }
+    #id3 {
+        left: 27%;
+        top: 4%;
+    }
+    #left-nav
+    {
+        display: none;
+        left: -100%;
+    } 
+    #top-nav {
+        z-index: 999999;
+        height: 14vw;
+        width : 90%;
+    }
+    #brandName{
+        white-space: nowrap;
+        left : -1px;
+        position: absolute;
+    }
+    #exitbox {
+        position: absolute;
+        width: 200px;
+        height: 50px;
+        top: -12%;
+        left : -90%;
+    }
+    #search{
+        display: none;
+    }
+    #signin {
+        height: 45%;
+        width: 97%;
+        padding: 6px;
+    }
+    #signin h1{
+        font-weight: 300;
+        font-size: 17px;
+    }
+    #brows i{
+        display: none;
+    }
+    #cart
+    {
+        display: none;
+    }
 }
-.echo:hover{
-    scale: 1.2;
-    overflow: auto;
-}
-.echo img:hover{
-    scale: 1.2;
-} */
-/* .foxtrot
-{
-    width: 100%;
-    height: 16%;
-    transition: cubic-bezier(0.19, 1, 0.22, 1) 2s;
-}
-.foxtrot>img
-{
-    position: relative;
-    bottom: -15px;
-}
-.foxtrot:hover{
-    scale: 1.2;
-    overflow: auto;
-}
-.foxtrot img:hover{
-    scale: 1.2;
-} */
-
-
-
