@@ -20,6 +20,7 @@
         width: 100%;
         height: 100%;
         position: relative;
+        background-color: #f5f5f5;
     }
     #overlay
     {
@@ -34,6 +35,8 @@
         width: 5vw;
         z-index: 999999999999;
         border-right: 1px solid rgba(0, 0, 0, 0.433);
+        background-color: #F5F5F5;
+        left : -100%;
     }
     #nav-bar
     {
@@ -84,10 +87,13 @@
     {
         position: absolute;
         height: 5vw;
-        width: calc(100% - 5vw);
-        left: 5vw;
+        /* width: calc(100% - 5vw); */
+        width: calc(100%);
+        /* left: 5vw; */
         display: flex;
+        top : -100%;
         border-bottom: 1px solid rgba(0, 0, 0, 0.433);
+        background-color: #F5F5F5;
     }
     #tnl
     {
@@ -200,9 +206,9 @@
     #top
     {
         position: absolute;
-        width: calc(100% - 5vw);
+        width: calc(100%);
         height: 20%;
-        left: 5vw;
+        /* left: 5vw; */
         top : 5vw;
         display: flex;
         flex-direction: row;
@@ -210,6 +216,8 @@
         align-items: center;
         align-content: center;
         padding-bottom: 30px;
+        background-color : #F5F5F5;
+        display: none;
     }
     .top-item{
         height: 120px;
@@ -248,18 +256,18 @@
         background-image: url("Images/bobo-handpainted-indian-vehicles/taxi/i1.png");
         background-size: 100% 100%;
         background-repeat: no-repeat;
-        background-color: white;
+        background-color: #F5F5F5;
         border-radius: 50%;
     }
     #item4{
         background-image: url("Images/brass-product/elephant/p1/i1.png");
         background-size: 100% 100%;
         background-repeat: no-repeat;
-        background-color: white;
+        background-color:  #F5F5F5;
         border-radius: 50%;
     }
     #item5{
-        background-color: white;
+        background-color:  #F5F5F5;
         border-radius: 50%;
         display: flex;    
         justify-content: center;
@@ -276,16 +284,19 @@
         background-image: url("Images/Dhoop-stand/Meditating-buddha/p2/i1.png");
         background-size: 100% 100%;
         background-repeat: no-repeat;
-        background-color: white;
+        background-color:  #F5F5F5;
         border-radius: 50%;
     }
     #bottum
     {
         position: absolute;
-        width: calc(100% - 5vw);
-        height: calc(100% - 20% - 5vw);
-        left: 5vw;
-        top : calc(20% + 5vw);
+        /* width: calc(100% - 5vw); */
+        width: calc(100%);
+        /* height: calc(100% - 20% - 5vw); */
+        height: calc(100%);
+        /* left: 5vw; */
+        /* top : calc(20% + 5vw); */
+        top : 0%;
         background-color: #f5f5f5;
         display: flex;
         flex-direction: column;
@@ -383,14 +394,14 @@
         background-size: 120% 120%;
         background-repeat: no-repeat;
         position: relative;
-        left: -10%;
+        left: -3%;
     }
     #itm2{
         background-image: url("Images/Wooden-drink-coaster-Mandala/Owl-shaped/p1/i3.png");
         background-size: 100% 100%;
         background-repeat: no-repeat;
         position: relative;
-        left: -10%;
+        left: -1%;
     }
     #itm3{
         /* background-image: url(""); */
@@ -437,14 +448,14 @@
         background-size: 100% 100%;
         background-repeat: no-repeat;
         position: relative;
-        right: -10%;
+        right: 1%;
     }
     #itm5{
         background-image: url("Images/brass-product/taxi/p1/i1.png");
         background-size: 110% 110%;
         background-repeat: no-repeat;
         position: relative;
-        right: -7%;
+        right: -2%;
     }
     #buttum-mid{
         height: 33.3%;
@@ -463,7 +474,7 @@
         background-image: url("images/pen-holder/p1/i1.png");
         background-size: 100% 100%;
         position: relative;
-        left: -100px;;
+        left: -2%;
     }
     #mid-itm2{
         background-image: url("Images/Dhoop-stand/Lord-shiva/p3/i2.png");
@@ -491,7 +502,7 @@
         background-image: url("images/hanging-wall/p8/i1.png");
         background-size: 100% 100%;
         position: relative;
-        right: -90px;
+        right: -2%;
     }
     #buttum-botm{
         height: 33.3%;
@@ -513,7 +524,7 @@
         background-size: 100% 100%;
         background-repeat: no-repeat;
         position: relative;
-        left: -100px;
+        left: -3%;
         bottom : 0%;
     }
     #bt-itm2{
@@ -535,7 +546,7 @@
         background-size: 100% 100%;
         background-repeat: no-repeat;
         position: relative;
-        right: -100px;
+        right: -1%;
         bottom : 0%;
     }
     #bt-itm5{
@@ -543,7 +554,7 @@
         background-size: 100% 100%;
         background-repeat: no-repeat;
         position: relative;
-        right: -100px;
+        right: -4%;
         bottom : 0%;
 
     }
@@ -554,7 +565,7 @@
         height: 100%;
         overflow-y: auto;
         gap: 4vh;
-        width: 40vw;
+        width: 30vw;
         padding-left: 7vw;
         background-color:white;
         display: flex;
@@ -565,9 +576,7 @@
     }
     #mainu-text h3{
         padding-left: 2vw;
-    }
-    #mainu-text::-webkit-scrollbar{display: none;}
-    
+    }    
     
     #mainu-text a{
         padding-left: 3vw;
@@ -593,8 +602,7 @@
     .gift{
         position: relative;
         height: 100%;
-        width: 45vw;
-       left: 5vw;
+        width: 35vw;
        padding-left: 6vw;
        overflow-y: auto;
        overflow-x: hidden;
@@ -602,17 +610,34 @@
         z-index: 99;
         left: -100%;
         opacity: 0;
-        transition: all cubic-bezier(0.165, 0.84, 0.44, 1) .5s;
-    
-        
+        transition: all cubic-bezier(0.165, 0.84, 0.44, 1) .5s;   
     }
     .gift::-webkit-scrollbar{display: none;}
     .gift h1{
-        position: relative;
-        font-size: 50px;
+        margin-top: 30px;
+        font-size: 40px;
+        font-weight: 500;
         left: 10vw;
         padding-bottom: 1vw;
     }
+    .gift h2{
+        font-size: 22px;
+        white-space: nowrap;
+        font-weight: 300;
+        
+        padding-bottom: 1vw;
+    
+    }
+    .gift  .hadding{
+       color: rgb(86, 117, 211);
+        padding-left: 32%;
+         margin: 30px;
+         font-size: 25px;
+         font-weight: 500;
+     }
+    
+    
+    
     .giftCart{
     
         height: 14vw;
@@ -651,7 +676,7 @@
           position: absolute;
          height: 100%;
          width: 45vw;
-         padding-left: 5vw;
+         padding-left: 6vw;
          top: 0;
          left: 5vw;
          left: -100%;
@@ -659,6 +684,18 @@
          overflow-y: auto;
          
          background-color: #fff;
+    }
+    #trending h1{
+        font-size: 40px;
+        margin-bottom: 20px;
+        font-weight: 400;
+    }
+    #trending a{
+        text-decoration: none;
+        font-weight: 500;
+    }
+    #trending a:hover{
+        color: orange;
     }
     #trending .creator{
         margin: 2vw;
@@ -671,6 +708,13 @@
        overflow: hidden;
         background-size: cover;
     }
+    #trending .hadding{
+       
+        padding-left: 35%;
+         margin: 30px;
+         font-size: 25px;
+         font-weight: 500;
+     }
     #trending .creator img{
         height: 100%;
         width: 100%;
@@ -717,7 +761,8 @@
         padding-left: 20px;  
     
     }
-      
+    
+    
     #mystuff video{
         position:relative;
         top:20px;
@@ -773,19 +818,396 @@
         height: 100%;
         width: 45vw;
         padding-left: 5vw;
-       
-       top: 0;
-      left: 4vw;
-      left: -100%;
-       overflow-x: hidden;
-       overflow-y: auto;
+        overflow-x: hidden;
+        top: 0;
+        left: -100%;
         background-color: #fff;
         text-align: center;
+    }
+    #liveside h1{
+        white-space: nowrap;
+        font-size: 40px;
+        font-weight: 400;
+        margin-bottom: 40px;
+        margin-top: 20px;
+    }
+    #liveside p{
+        font-weight: 500;
+        opacity: .8;
+        text-align: left;
+        margin-bottom: 40px;
+    }
+    #liveside li{
+        text-align: left;
+        font-weight: 500;
+       
+        line-height: 25px;
+       
+    }
     
+    
+    #liveside h3{
+        position: absolute;
+        top:50%;
+        left: 65px;
+        font-size: 40px;
+        font-weight: 600;
+        margin-bottom: 40px;
+    }
+    #liveside button{
+        position:absolute;
+        margin-top: 30px;
+        padding: 20px 30px;
+        color:#fff;
+        font-weight: 600;
+        background-color: rgba(7, 52, 188, 0.806);
+        border: none;
+        top:55%;
+        left: 65px;
+    }
+    #liveside a{
+        position: absolute;
+        left: 65px;
+        top:78%;
+        color: #0f3f97;
+        text-decoration: none;
+    }
+    #liveside #help {
+        position: absolute;
+        left: 40%;
+        top:90%;
+        font-size: 30px;
+        font-weight: 400;
+        margin-bottom: 40px;
+    }
+    #liveside #image{
+        position: absolute;
+        top:110%;
+        background-color: black;
+        width: 100%;
+       height: 60%;
+       overflow: hidden;
+      
+      
+    }
+    #liveside #image img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .masterpice{
+        position: absolute;
+        width: 96%;
+        display: flex;
+        gap: 20px;
+        top: 180%;
+       
+    }
+    .masterpice1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    
+    }
+    .master{
+        width: 250px;
+        height: 200px;
+        margin: 20px 0px;
+        /* background-color: #0f3f97; */
+    }
+    .image{
+        width: 250px;
+        height: 170px;
+        overflow: hidden;   
+        /* background-color: black; */
+    
+    }
+    .image img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .master h4{
+        margin-top: 10px;
+        font-weight: 500;
+    }
+    .master h4:hover{
+        color: burlywood;
+        font-size: 18px;
+    
+    }
+    .image img:hover{
+        opacity: .5;
+    }
+    
+    .masterpice{
+        position: absolute;
+        width: 96%;
+        display: flex;
+        gap: 20px;
+        top: 180%;
+       
+    }
+    .masterpice1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    
+    }
+    .master{
+        width: 250px;
+        height: 200px;
+        margin: 20px 0px;
+        /* background-color: #0f3f97; */
+    }
+    .image{
+        width: 250px;
+        height: 170px;
+        overflow: hidden;   
+        /* background-color: black; */
+    
+    }
+    .image img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .master h4{
+        margin-top: 10px;
+        font-weight: 500;
+    }
+    .master h4:hover{
+        color: burlywood;
+        font-size: 18px;
+    
+    }
+    .image img:hover{
+        opacity: .5;
+    }
+    #exploreicon{ 
+        position: absolute;
+        height: 100%;
+        width: 45vw;
+        padding-left: 4vw;
+        top: 0;
+        left: -100%;
+         overflow-x: hidden;
+         overflow-y: auto;
+       background-color: #fff;
+        
+    }
+    #exploreicon h1{
+        font-size: 40px;
+        font-weight: 500;
+        margin: 20px 0;
+    }
+    #exploreicon a{
+      
+       text-decoration: none;
+    }
+    #exploreicon .hadding{
+       
+       padding-left: 30%;
+        margin: 20px;
+        font-size: 25px;
+        font-weight: 500;
+    }
+    
+    .deal{
+        
+        width: 96%;
+        display: flex;
+        gap: 20px;
+       
+       
+    }
+    .deal1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    
+    }
+    .dmaster{
+        width: 250px;
+        height: 200px;
+        margin: 20px 0px;
+        /* background-color: #0f3f97; */
+    }
+    .dimage{
+        width: 250px;
+        height: 170px;
+        overflow: hidden;   
+        /* background-color: black; */
+    
+    }
+    .dimage img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .dmaster h4{
+        margin-top: 10px;
+        font-weight: 500;
+    }
+    .dmaster h4:hover{
+        color: burlywood;
+        font-size: 18px;
+    
+    }
+    .dimage img:hover{
+        opacity: .5;
+    }
+        
+    #chating{
+        position: absolute;
+        height: 100%;
+        width: 45vw;
+        padding-left: 4vw;
+        overflow-x: hidden;
+        top: 0;
+        left: 4vw;
+        left: -100%;
+        background-color: #fff;
+    }
+    #chating h1{
+        font-size: 40px;
+        font-weight: 500;
+        margin: 20px 0;
+    }
+    #chating a{
+      
+       text-decoration: none;
+    }
+    #chating .hadding{
+       
+        padding-left: 30%;
+         margin: 20px;
+         font-size: 25px;
+         font-weight: 500;
+     }
+     #chating .blank{
+        display: flex;
+        gap: 30px;
+     }
+     .blank .blankImage{
+        height: 140px;
+        width: 125px;
+        overflow: hidden;
+        background-color: black;
+     }
+     .blank .blankImage img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+     }
+    
+     #shell{
+        position: absolute;
+        height: 100%;
+        width: 35vw;
+        padding-left: 4vw;
+        overflow-x: hidden;    
+        top: 0;
+        left: -100%;
+        background-color: #fff;
+        display: none;
+    }
+    #shell h1{
+        font-size: 40px;
+        font-weight: 400;
+        margin: 20px 0;
+    }
+    #shell button{
+        margin-top: 20px;
+     padding: 15px  40px;
+     font-size: 18px;
+     border: none;
+     color: #fff;
+     font-weight: 600;
+     background-color: rgba(7, 52, 188, 0.893);
+    }
+    #shell button:hover{
+        background-color: royalblue;
+    }
+    
+    #shell .hadding{
+       
+       padding-left: 30%;
+        margin: 20px;
+        font-size: 25px;
+        font-weight: 500;
+    }
+    #resources {
+        display: flex;
+      gap: 30px;
+    }
+    #resources .resourceColunm{
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+    }
+    
+    #resources .resource{
+        height: 160px;
+        width: 300px;
+        margin-bottom: 20px;
+         background-color: black;
+    
+    }
+    #resources .resource .Rimages{
+        height: 140px;
+        width: 300px;
+        overflow: hidden;
+         background-color:red;
+    
+    }
+    #resources .resource .Rimages img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    #resources .resource h4{
+        font-weight: 500;
+        margin-top: 20px;
+    }
+    
+    
+     .products{
+        display: flex;
+        gap: 20px;
+        flex-direction: row;
+    }
+     .products .product{
+        margin-bottom: 20px;
+        height: 130px ;
+        width: 200px;
+        overflow: hidden;
+        background-color: #0f3f97;
+    }
+    .products .product img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .products .product:hover{
+        scale: 1.1;
+    }
+    #topProduct{
+        display: flex;
+    
+    }
+    #topProduct .images{
+    height: 140px;
+    width: 120px;
+    background-color: green;
     }
 
 
 
+/* rahul codes     */
 #columns
 {
     width: 100%;
