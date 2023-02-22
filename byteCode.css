@@ -602,7 +602,7 @@
     .gift{
         position: relative;
         height: 100%;
-        width: 35vw;
+        width: 45vw;
        padding-left: 6vw;
        overflow-y: auto;
        overflow-x: hidden;
@@ -1377,3 +1377,6 @@
 .foxtrot img:hover{
     scale: 1.2;
 } */
+
+
+
