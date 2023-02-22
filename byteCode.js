@@ -7,7 +7,100 @@ const Trending=document.querySelector(".ri-apps-fill");
 const trending1=document.querySelector("#trending");
 const mystuff=document.querySelector(".ri-file-cloud-fill");
 const mystuff1=document.querySelector("#mystuff");
+const sell =document.querySelector("#se");
+const LIVE =document.querySelector("#LIVE");
+const Explore =document.querySelector("#Explore");
+const Create =document.querySelector("#Create");
 var flag = 1;
+
+// sell.style.pointerEvents = "initial";
+sell.addEventListener("click",function(det)
+{
+    if(flag == 1)
+    {
+        gsap.to("#shell",
+        {
+            display : "initial",
+            left : "3%",
+        })
+        flag =0;
+    }
+    else 
+    {
+        gsap.to("#shell",
+        {
+            display : "none",
+            left : "-100%",
+        })
+        flag =1;
+    }
+})
+LIVE.addEventListener("click",function(det)
+{
+    console.log(det.target);
+    if(flag == 1)
+    {
+        gsap.to("#liveside",
+        {
+            display : "initial",
+            left : "3%",
+        })
+        flag =0;
+    }
+    else 
+    {
+        gsap.to("#liveside",
+        {
+            display : "none",
+            left : "-100%",
+        })
+        flag =1;
+    }
+})
+Explore.addEventListener("click",function(det)
+{
+    console.log(det.target);
+    if(flag == 1)
+    {
+        gsap.to("#exploreicon",
+        {
+            display : "initial",
+            left : "3%",
+        })
+        flag =0;
+    }
+    else 
+    {
+        gsap.to("#exploreicon",
+        {
+            display : "none",
+            left : "-100%",
+        })
+        flag =1;
+    }
+})
+Create.addEventListener("click",function(det)
+{
+    console.log(det.target);
+    if(flag == 1)
+    {
+        gsap.to("#chating",
+        {
+            display : "initial",
+            left : "3%",
+        })
+        flag =0;
+    }
+    else 
+    {
+        gsap.to("#chating",
+        {
+            display : "none",
+            left : "-100%",
+        })
+        flag =1;
+    }
+})
 remenufill.addEventListener("click",function()
 {
     overlay.style.pointerEvents = "initial";
@@ -104,7 +197,7 @@ overlay.addEventListener("click",function()
 })
 
 
-
+//Rahul's code start from here
 
 var tl = gsap.timeline()
 tl.to("#itm3 h1",
@@ -323,11 +416,32 @@ button.addEventListener("click",function()
     {
         display: "none",
     },"same2")
+    .to("#left-nav",
+    {
+        left : "0%",
+        duration : 2,
+    },"hotel")
+    .to("#top-nav",
+    {
+        left : "5vw",
+        duration : 2,
+        width : "calc(100%-5vw)",
+        top : "0%",
+    },"hotel")
+    .to("#bottum",
+    {
+        left : "5vw",
+        delay : 1,
+        width : "calc(100% - 5vw)",
+        height : "calc(100% - 5vw)",
+        top : "5vw",
+        // duration : 2,
+    },"hotel")
     .to("#bottum #wraper",
     {
         duration : 1,
         display : "initial",
-    })
+    },"hotel")
     .to("#wraper .clmA img",
     {
         scale : 1,
