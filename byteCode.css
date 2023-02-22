@@ -303,7 +303,7 @@
         overflow: hidden;
     }
     #itm3 button h1{
-        font-size: 20px;
+        font-size: 15px;
         text-transform: capitalize;
         font-weight: 400;
     }
@@ -427,9 +427,9 @@
 
     #itm3 button
     {
-        padding: 20px 50px;
+        padding: 6px 34px;
         border-radius: 7px;
-        background-color : rgb(73,58,58);
+        background-color : rgb(23, 20, 20);
         color : white;
         border-color: transparent;
         opacity: 0;
