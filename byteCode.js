@@ -325,48 +325,14 @@ button.addEventListener("click",function()
     },"same2")
     .to("#bottum #wraper",
     {
+        duration : 1,
         display : "initial",
     })
     .to("#wraper .clmA img",
     {
         scale : 1,
-        transition : "all cubic-bezier(0.19, 1, 0.22, 1) 1s",
-        duration : 4,
     })
 })
-
-
-// var arr = [
-// {id : "id0", img:"Images/brass-product/Camel/p1/i1.png",img2:"Images/brass-product/Camel/p1/i2.png",
-// img3:"Images/brass-product/Camel/p1/i3.png",img4:"Images/brass-product/Camel/p1/i4.png",imgid: "A"},
-
-// {id : "id1", img:"Images/brass-product/Camel/p1/i1.png",img2:"Images/brass-product/Camel/p1/i2.png",
-// img3:"Images/brass-product/Camel/p1/i3.png",img4:"Images/brass-product/Camel/p1/i4.png",imgid: "B"},
-
-// {id : "id2", img:"Images/brass-product/Camel/p1/i1.png",img2:"Images/brass-product/Camel/p1/i2.png",
-// img3:"Images/brass-product/Camel/p1/i3.png",img4:"Images/brass-product/Camel/p1/i4.png",imgid: "C"},
-
-// {id : "id3", img:"Images/brass-product/Camel/p1/i1.png",img2:"Images/brass-product/Camel/p1/i2.png",
-// img3:"Images/brass-product/Camel/p1/i3.png",img4:"Images/brass-product/Camel/p1/i4.png",imgid: "D"},
-
-// {id : "id4", img:"Images/brass-product/Camel/p1/i1.png",img2:"Images/brass-product/Camel/p1/i2.png",
-// img3:"Images/brass-product/Camel/p1/i3.png",img4:"Images/brass-product/Camel/p1/i4.png",imgid: "E"},
-
-// {id : "id5", img:"Images/brass-product/Camel/p1/i1.png",img2:"Images/brass-product/Camel/p1/i2.png",
-// img3:"Images/brass-product/Camel/p1/i3.png",img4:"Images/brass-product/Camel/p1/i4.png",imgid: "F"},
-
-// {id : "id6", img:"Images/brass-product/Camel/p1/i1.png",img2:"Images/brass-product/Camel/p1/i2.png",
-// img3:"Images/brass-product/Camel/p1/i3.png",img4:"Images/brass-product/Camel/p1/i4.png",imgid: "G"},
-
-// {id : "id7", img:"Images/brass-product/Camel/p1/i1.png",img2:"Images/brass-product/Camel/p1/i2.png",
-// img3:"Images/brass-product/Camel/p1/i3.png",img4:"Images/brass-product/Camel/p1/i4.png",imgid: "H"},
-
-// {id : "id8", img:"Images/brass-product/Camel/p1/i1.png",img2:"Images/brass-product/Camel/p1/i2.png",
-// img3:"Images/brass-product/Camel/p1/i3.png",img4:"Images/brass-product/Camel/p1/i4.png",imgid: "I"},
-
-// {id : "id9", img:"Images/brass-product/Camel/p1/i1.png",img2:"Images/brass-product/Camel/p1/i2.png",
-// img3:"Images/brass-product/Camel/p1/i3.png",img4:"Images/brass-product/Camel/p1/i4.png",imgid: "J"},
-// ];
 
 var arr = [
 {id : "id0", img:"Images/bobo-handpainted-indian-vehicles/Truck/i4.png",
@@ -494,7 +460,7 @@ var J2 = document.querySelector("#J2");
 var J3 = document.querySelector("#J3");
 var J4 = document.querySelector("#J4");
 
-
+var exit = document.querySelector("#exit");
 var flag = true;
 function animation()
 {
@@ -564,7 +530,8 @@ function animation()
 }
 
 A1.addEventListener("click",function(det)
-{
+{exit.style.display = "initial";
+    exit.style.opacity = 1;
     if(flag)
     {
         animation();
@@ -579,7 +546,8 @@ A1.addEventListener("click",function(det)
     })
 })
 A2.addEventListener("click",function(det)
-{
+{exit.style.display = "initial";
+    exit.style.opacity = 1;
     if(flag)
     {
         animation();
@@ -595,6 +563,8 @@ A2.addEventListener("click",function(det)
 })
 A3.addEventListener("click",function(det)
 {
+    exit.style.display = "initial";
+    exit.style.opacity = 1;
     if(flag)
     {
         animation();
@@ -610,6 +580,8 @@ A3.addEventListener("click",function(det)
 })
 A4.addEventListener("click",function(det)
 {
+    exit.style.display = "initial";
+    exit.style.opacity = 1;
     if(flag)
     {
         animation();
@@ -627,6 +599,8 @@ A4.addEventListener("click",function(det)
 
 B1.addEventListener("click",function(det)
 {
+    exit.style.display = "initial";
+    exit.style.opacity = 1;
     if(flag)
     {
         animation();
@@ -642,6 +616,8 @@ B1.addEventListener("click",function(det)
 })
 B2.addEventListener("click",function(det)
 {
+    exit.style.display = "initial";
+    exit.style.opacity = 1;
     if(flag)
     {
         animation();
@@ -657,6 +633,8 @@ B2.addEventListener("click",function(det)
 })
 B3.addEventListener("click",function(det)
 {
+    exit.style.display = "initial";
+    exit.style.opacity = 1;
     if(flag)
     {
         animation();
@@ -671,7 +649,8 @@ B3.addEventListener("click",function(det)
     })
 })
 B4.addEventListener("click",function(det)
-{
+{exit.style.display = "initial";
+    exit.style.opacity = 1;
     if(flag)
     {
         animation();
@@ -689,6 +668,137 @@ B4.addEventListener("click",function(det)
 
 function c1()
 {
+    gsap.to("#A1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#A2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#A3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#A4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#B1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#B2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#B3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#B4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#I1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#I2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#I3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#I4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#J1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#J2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#J3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#J4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
     gsap.to("#C2",
     {
         position : "relative",
@@ -710,12 +820,303 @@ function c1()
         position : "relative",
         duration : 2,
         left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#D1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#D2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#D3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#D4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#E1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#E2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#E3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#E4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#F1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#F2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#F3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#F4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#G1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#G2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#G3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#G4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#H1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#H2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#H3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#H4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
         top : "0%",
         scale : 1,
     })
 }
 function c2()
 {
+    gsap.to("#A1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#A2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#A3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#A4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#B1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#B2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#B3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#B4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#I1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#I2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#I3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#I4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#J1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#J2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#J3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#J4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
     gsap.to("#C1",
     {
         position : "relative",
@@ -737,13 +1138,304 @@ function c2()
         position : "relative",
         duration : 2,
         left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#D1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#D2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#D3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#D4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#E1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#E2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#E3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#E4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#F1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#F2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#F3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#F4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#G1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#G2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#G3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#G4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#H1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#H2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#H3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#H4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
         top : "0%",
         scale : 1,
     })
 }
 function c3()
 {
-    gsap.to("#C1",
+    gsap.to("#A1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#A2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#A3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#A4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#B1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#B2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#B3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#B4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#I1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#I2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#I3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#I4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#J1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#J2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#J3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#J4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#C2",
     {
         position : "relative",
         duration : 2,
@@ -751,7 +1443,7 @@ function c3()
         top : "0%",
         scale : 1,
     }) 
-    gsap.to("#C2",
+    gsap.to("#C1",
     {
         position : "relative",
         duration : 2,
@@ -767,10 +1459,7 @@ function c3()
         top : "0%",
         scale : 1,
     })
-}
-function c4()
-{
-    gsap.to("#C1",
+    gsap.to("#D1",
     {
         position : "relative",
         duration : 2,
@@ -778,7 +1467,15 @@ function c4()
         top : "0%",
         scale : 1,
     }) 
-    gsap.to("#C2",
+    gsap.to("#D2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#D3",
     {
         position : "relative",
         duration : 2,
@@ -786,6 +1483,284 @@ function c4()
         top : "0%",
         scale : 1,
     })
+    gsap.to("#D4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#E1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#E2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#E3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#E4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#F1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#F2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#F3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#F4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#G1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#G2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#G3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#G4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#H1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#H2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#H3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#H4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+}
+function c4()
+{
+    gsap.to("#A1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#A2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#A3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#A4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#B1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#B2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#B3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#B4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#I1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#I2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#I3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#I4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#J1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#J2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#J3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#J4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#C2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
     gsap.to("#C3",
     {
         position : "relative",
@@ -794,9 +1769,180 @@ function c4()
         top : "0%",
         scale : 1,
     })
+    gsap.to("#C1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#D1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#D2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#D3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#D4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#E1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#E2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#E3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#E4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#F1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#F2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#F3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#F4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#G1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#G2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#G3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#G4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#H1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#H2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#H3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#H4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
 }
+
 C1.addEventListener("click",function(det)
-{    if(flag)
+{  exit.style.display = "initial"; 
+    exit.style.opacity = 1;
+     if(flag)
     {
         animation();
     }
@@ -811,7 +1957,8 @@ C1.addEventListener("click",function(det)
     })
 })
 C2.addEventListener("click",function(det)
-{
+{   exit.style.display = "initial";
+     exit.style.opacity = 1;
     if(flag)
     {
         animation();
@@ -827,7 +1974,8 @@ C2.addEventListener("click",function(det)
     })
 })
 C3.addEventListener("click",function(det)
-{
+{   exit.style.display = "initial";
+     exit.style.opacity = 1;
     if(flag)
     {
         animation();
@@ -843,13 +1991,13 @@ C3.addEventListener("click",function(det)
     })
 })
 C4.addEventListener("click",function(det)
-{
+{   exit.style.display = "initial";
+     exit.style.opacity = 1;
     if(flag)
     {
         animation();
     }
     c4();
-    console.log(det.target);
     gsap.to("#C4",
     {
         position : "absolute",
@@ -861,6 +2009,170 @@ C4.addEventListener("click",function(det)
 })
 function d1()
 {
+    gsap.to("#A1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#A2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#A3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#A4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#B1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#B2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#B3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#B4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#I1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#I2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#I3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#I4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#J1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#J2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#J3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#J4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#C1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#C2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#C3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#C4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+  
     gsap.to("#D2",
     {
         position : "relative",
@@ -882,12 +2194,304 @@ function d1()
         position : "relative",
         duration : 2,
         left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#E1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#E2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#E3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#E4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#F1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#F2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#F3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#F4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#G1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#G2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#G3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#G4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#H1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#H2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#H3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#H4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
         top : "0%",
         scale : 1,
     })
 }
 function d2()
 {
+    gsap.to("#A1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#A2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#A3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#A4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#B1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#B2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#B3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#B4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#I1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#I2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#I3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#I4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#J1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#J2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#J3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#J4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#C1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#C2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#C3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#C4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+  
     gsap.to("#D1",
     {
         position : "relative",
@@ -909,13 +2513,272 @@ function d2()
         position : "relative",
         duration : 2,
         left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#E1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#E2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#E3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#E4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#F1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#F2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#F3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#F4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#G1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#G2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#G3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#G4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#H1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#H2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#H3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#H4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
         top : "0%",
         scale : 1,
     })
 }
 function d3()
 {
-    gsap.to("#D1",
+    gsap.to("#A1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#A2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#A3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#A4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#B1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#B2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#B3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#B4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#I1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#I2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#I3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#I4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#J1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#J2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#J3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#J4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#C1",
     {
         position : "relative",
         duration : 2,
@@ -923,7 +2786,40 @@ function d3()
         top : "0%",
         scale : 1,
     }) 
+    gsap.to("#C2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#C3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#C4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+  
     gsap.to("#D2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#D1",
     {
         position : "relative",
         duration : 2,
@@ -939,10 +2835,7 @@ function d3()
         top : "0%",
         scale : 1,
     })
-}
-function d4()
-{
-    gsap.to("#D1",
+    gsap.to("#E1",
     {
         position : "relative",
         duration : 2,
@@ -950,7 +2843,15 @@ function d4()
         top : "0%",
         scale : 1,
     }) 
-    gsap.to("#D2",
+    gsap.to("#E2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#E3",
     {
         position : "relative",
         duration : 2,
@@ -958,6 +2859,285 @@ function d4()
         top : "0%",
         scale : 1,
     })
+    gsap.to("#E4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#F1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#F2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#F3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#F4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#G1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#G2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#G3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#G4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#H1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#H2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#H3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#H4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+}
+function d4()
+{
+    gsap.to("#A1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#A2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#A3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#A4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#B1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#B2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#B3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#B4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#I1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#I2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#I3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#I4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#J1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#J2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#J3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#J4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#C1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#C2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#C3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#C4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+  
+    gsap.to("#D2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
     gsap.to("#D3",
     {
         position : "relative",
@@ -966,9 +3146,146 @@ function d4()
         top : "0%",
         scale : 1,
     })
+    gsap.to("#D1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#E1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#E2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#E3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#E4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#F1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#F2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#F3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#F4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#G1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#G2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#G3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#G4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#H1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#H2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#H3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#H4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
 }
 D1.addEventListener("click",function(det)
-{
+{   exit.style.display = "initial";
+     exit.style.opacity = 1;
     animation();
     d1();
     gsap.to("#D1",
@@ -981,7 +3298,8 @@ D1.addEventListener("click",function(det)
     })
 })
 D2.addEventListener("click",function(det)
-{
+{   exit.style.display = "initial";
+     exit.style.opacity = 1;
     if(flag)
     {
         animation();
@@ -997,7 +3315,8 @@ D2.addEventListener("click",function(det)
     })
 })
 D3.addEventListener("click",function(det)
-{
+{   exit.style.display = "initial"; 
+    exit.style.opacity = 1;
     if(flag)
     {
         animation();
@@ -1013,13 +3332,13 @@ D3.addEventListener("click",function(det)
     })
 })
 D4.addEventListener("click",function(det)
-{
+{   exit.style.display = "initial"; 
+    exit.style.opacity = 1;
     if(flag)
     {
         animation();
     }
     d3();
-    console.log(det.target);
     gsap.to("#D4",
     {
         position : "absolute",
@@ -1032,6 +3351,204 @@ D4.addEventListener("click",function(det)
 
 function e1()
 {
+    gsap.to("#A1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#A2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#A3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#A4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#B1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#B2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#B3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#B4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#I1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#I2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#I3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#I4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#J1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#J2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#J3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#J4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+
+    gsap.to("#C1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#C2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#C3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#C4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+  
+    gsap.to("#D2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#D3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#D4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#D1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
     gsap.to("#E2",
     {
         position : "relative",
@@ -1053,12 +3570,303 @@ function e1()
         position : "relative",
         duration : 2,
         left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#F1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#F2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#F3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#F4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#G1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#G2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#G3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#G4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#H1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#H2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#H3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#H4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
         top : "0%",
         scale : 1,
     })
 }
 function e2()
 {
+    gsap.to("#A1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#A2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#A3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#A4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#B1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#B2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#B3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#B4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#I1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#I2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#I3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#I4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#J1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#J2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#J3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#J4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#C1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#C2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#C3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#C4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#D1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#D2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#D3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#D4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
     gsap.to("#E1",
     {
         position : "relative",
@@ -1080,12 +3888,303 @@ function e2()
         position : "relative",
         duration : 2,
         left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#F1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#F2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#F3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#F4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#G1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#G2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#G3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#G4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#H1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#H2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#H3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#H4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
         top : "0%",
         scale : 1,
     })
 }
 function e3()
 {
+    gsap.to("#A1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#A2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#A3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#A4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#B1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#B2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#B3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#B4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#I1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#I2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#I3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#I4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#J1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#J2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#J3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#J4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#C1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#C2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#C3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#C4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#D1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#D2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#D3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#D4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
     gsap.to("#E1",
     {
         position : "relative",
@@ -1110,9 +4209,300 @@ function e3()
         top : "0%",
         scale : 1,
     })
+    gsap.to("#F1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#F2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#F3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#F4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#G1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#G2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#G3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#G4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#H1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#H2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#H3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#H4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
 }
 function e4()
 {
+    gsap.to("#A1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#A2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#A3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#A4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#B1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#B2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#B3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#B4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#I1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#I2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#I3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#I4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#J1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#J2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#J3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#J4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#C1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#C2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#C3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#C4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#D1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#D2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#D3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#D4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
     gsap.to("#E1",
     {
         position : "relative",
@@ -1121,14 +4511,6 @@ function e4()
         top : "0%",
         scale : 1,
     }) 
-    gsap.to("#E2",
-    {
-        position : "relative",
-        duration : 2,
-        left : "0%",
-        top : "0%",
-        scale : 1,
-    })
     gsap.to("#E3",
     {
         position : "relative",
@@ -1137,9 +4519,114 @@ function e4()
         top : "0%",
         scale : 1,
     })
+    gsap.to("#E2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#F1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#F2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#F3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#F4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#G1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#G2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#G3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#G4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#H1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#H2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#H3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#H4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
 }
 E1.addEventListener("click",function(det)
-{
+{   exit.style.display = "initial"; 
+    exit.style.opacity = 1;
     animation();
     e1();
     gsap.to("#E1",
@@ -1152,7 +4639,8 @@ E1.addEventListener("click",function(det)
     })
 })
 E2.addEventListener("click",function(det)
-{
+{   exit.style.display = "initial"; 
+    exit.style.opacity = 1;
     if(flag)
     {
         animation();
@@ -1168,7 +4656,8 @@ E2.addEventListener("click",function(det)
     })
 })
 E3.addEventListener("click",function(det)
-{
+{   exit.style.display = "initial"; 
+    exit.style.opacity = 1;
     if(flag)
     {
         animation();
@@ -1184,7 +4673,8 @@ E3.addEventListener("click",function(det)
     })
 })
 E4.addEventListener("click",function(det)
-{
+{   exit.style.display = "initial"; 
+    exit.style.opacity = 1;
     if(flag)
     {
         animation();
@@ -1201,7 +4691,8 @@ E4.addEventListener("click",function(det)
 })
 
 J1.addEventListener("click",function(det)
-{
+{   exit.style.display = "initial"; 
+    exit.style.opacity = 1;
     if(flag)
     {
         animation();
@@ -1216,7 +4707,8 @@ J1.addEventListener("click",function(det)
     })
 })
 J2.addEventListener("click",function(det)
-{
+{   exit.style.display = "initial"; 
+    exit.style.opacity = 1;
     if(flag)
     {
         animation();
@@ -1231,7 +4723,8 @@ J2.addEventListener("click",function(det)
     })
 })
 J3.addEventListener("click",function(det)
-{
+{   exit.style.display = "initial"; 
+    exit.style.opacity = 1;
     if(flag)
     {
         animation();
@@ -1246,7 +4739,8 @@ J3.addEventListener("click",function(det)
     })
 })
 J4.addEventListener("click",function(det)
-{
+{   exit.style.display = "initial"; 
+    exit.style.opacity = 1;
     if(flag)
     {
         animation();
@@ -1262,7 +4756,8 @@ J4.addEventListener("click",function(det)
 })
 
 I1.addEventListener("click",function(det)
-{
+{   exit.style.display = "initial"; 
+    exit.style.opacity = 1;
     if(flag)
     {
         animation();
@@ -1277,7 +4772,8 @@ I1.addEventListener("click",function(det)
     })
 })
 I2.addEventListener("click",function(det)
-{
+{   exit.style.display = "initial"; 
+    exit.style.opacity = 1;
     if(flag)
     {
         animation();
@@ -1292,7 +4788,8 @@ I2.addEventListener("click",function(det)
     })
 })
 I3.addEventListener("click",function(det)
-{
+{   exit.style.display = "initial"; 
+    exit.style.opacity = 1;
     if(flag)
     {
         animation();
@@ -1307,7 +4804,8 @@ I3.addEventListener("click",function(det)
     })
 })
 I4.addEventListener("click",function(det)
-{
+{   exit.style.display = "initial"; 
+    exit.style.opacity = 1;
     if(flag)
     {
         animation();
@@ -1325,6 +4823,234 @@ I4.addEventListener("click",function(det)
 
 function f1()
 {
+    gsap.to("#A1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#A2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#A3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#A4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#B1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#B2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#B3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#B4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#I1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#I2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#I3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#I4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#J1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#J2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#J3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#J4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#C1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#C2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#C3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#C4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#D1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#D2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#D3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#D4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#E1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#E2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#E3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#E4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
     gsap.to("#F2",
     {
         position : "relative",
@@ -1342,6 +5068,70 @@ function f1()
         scale : 1,
     })
     gsap.to("#F4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#G1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#G2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#G3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#G4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#H1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#H2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#H3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#H4",
     {
         position : "relative",
         duration : 2,
@@ -1352,6 +5142,225 @@ function f1()
 }
 function f2()
 {
+    gsap.to("#A1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#A2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#A3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#A4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#B1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#B2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#B3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#B4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#I1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#I2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#I3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#I4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#J1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#J2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#J3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#J4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#C1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#C2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#C3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#C4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#D1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#D2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#D3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#D4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#E1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#E3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#E2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
     gsap.to("#F1",
     {
         position : "relative",
@@ -1369,6 +5378,70 @@ function f2()
         scale : 1,
     })
     gsap.to("#F4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#G1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#G2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#G3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#G4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#H1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#H2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#H3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#H4",
     {
         position : "relative",
         duration : 2,
@@ -1379,33 +5452,234 @@ function f2()
 }
 function f3()
 {
-    gsap.to("#F1",
+    gsap.to("#A1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#A2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#A3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#A4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#B1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#B2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#B3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#B4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#I1",
     {
         position : "relative",
         duration : 2,
         right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#I2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#I3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#I4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#J1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#J2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#J3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#J4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#C1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
         top : "0%",
         scale : 1,
     }) 
-    gsap.to("#F2",
+    gsap.to("#C2",
     {
         position : "relative",
         duration : 2,
-        right : "0%",
+        left : "0%",
         top : "0%",
         scale : 1,
-    })
-    gsap.to("#F4",
+    }) 
+    gsap.to("#C3",
     {
         position : "relative",
         duration : 2,
-        right : "0%",
+        left : "0%",
         top : "0%",
         scale : 1,
     })
-}
-function f4()
-{
+    gsap.to("#C4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#D1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#D2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#D3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#D4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#E1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#E2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#E3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#E4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
     gsap.to("#F1",
     {
         position : "relative",
@@ -1430,9 +5704,394 @@ function f4()
         top : "0%",
         scale : 1,
     })
+    gsap.to("#G1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#G2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#G3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#G4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#H1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#H2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#H3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#H4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+}
+function f4()
+{   
+    gsap.to("#A1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#A2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#A3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#A4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#B1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#B2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#B3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#B4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#I1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#I2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#I3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#I4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#J1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#J2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#J3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#J4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#C1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#C2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#C3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#C4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#D1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#D2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#D3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#D4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#E1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#E2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#E3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#E4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#F1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#F2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#F3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#G1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#G2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#G3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#G4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#H1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#H2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#H3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#H4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
 }
 F1.addEventListener("click",function(det)
-{    if(flag)
+{   exit.style.display = "initial";    
+    exit.style.opacity = 1;
+     if(flag)
     {
         animation();
     }
@@ -1447,7 +6106,8 @@ F1.addEventListener("click",function(det)
     })
 })
 F2.addEventListener("click",function(det)
-{
+{   exit.style.display = "initial"; 
+    exit.style.opacity = 1;
     if(flag)
     {
         animation();
@@ -1463,7 +6123,8 @@ F2.addEventListener("click",function(det)
     })
 })
 F3.addEventListener("click",function(det)
-{
+{   exit.style.display = "initial"; 
+    exit.style.opacity = 1;
     if(flag)
     {
         animation();
@@ -1479,13 +6140,13 @@ F3.addEventListener("click",function(det)
     })
 })
 F4.addEventListener("click",function(det)
-{
+{   exit.style.display = "initial";
+    exit.style.opacity = 1;
     if(flag)
     {
         animation();
     }
     f4();
-    console.log(det.target);
     gsap.to("#F4",
     {
         position : "absolute",
@@ -1498,6 +6159,266 @@ F4.addEventListener("click",function(det)
 
 function g1()
 {
+    gsap.to("#A1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#A2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#A3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#A4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#B1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#B2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#B3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#B4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#I1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#I2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#I3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#I4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#J1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#J2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#J3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#J4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#C1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#C2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#C3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#C4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#D1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#D2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#D3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#D4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#E1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#E2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#E3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#E4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#F1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#F2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#F3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#F4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
     gsap.to("#G2",
     {
         position : "relative",
@@ -1515,6 +6436,38 @@ function g1()
         scale : 1,
     })
     gsap.to("#G4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#H1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#H2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#H3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#H4",
     {
         position : "relative",
         duration : 2,
@@ -1525,6 +6478,266 @@ function g1()
 }
 function g2()
 {
+    gsap.to("#A1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#A2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#A3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#A4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#B1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#B2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#B3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#B4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#I1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#I2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#I3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#I4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#J1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#J2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#J3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#J4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#C1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#C2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#C3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#C4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#D1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#D2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#D3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#D4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#E1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#E2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#E3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#E4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#F1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#F2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#F3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#F4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
     gsap.to("#G1",
     {
         position : "relative",
@@ -1542,6 +6755,38 @@ function g2()
         scale : 1,
     })
     gsap.to("#G4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#H1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#H2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#H3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#H4",
     {
         position : "relative",
         duration : 2,
@@ -1552,6 +6797,266 @@ function g2()
 }
 function g3()
 {
+    gsap.to("#A1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#A2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#A3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#A4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#B1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#B2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#B3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#B4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#I1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#I2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#I3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#I4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#J1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#J2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#J3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#J4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#C1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#C2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#C3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#C4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#D1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#D2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#D3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#D4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#E1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#E2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#E3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#E4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#F1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#F2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#F3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#F4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
     gsap.to("#G1",
     {
         position : "relative",
@@ -1576,9 +7081,301 @@ function g3()
         top : "0%",
         scale : 1,
     })
+    gsap.to("#H1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#H2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#H3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#H4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
 }
 function g4()
 {
+    gsap.to("#A1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#A2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#A3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#A4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#B1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#B2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#B3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#B4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#I1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#I2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#I3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#I4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#J1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#J2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#J3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#J4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#C1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#C2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#C3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#C4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#D1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#D2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#D3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#D4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#E1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#E2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#E3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#E4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#F1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#F2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#F3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#F4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
     gsap.to("#G1",
     {
         position : "relative",
@@ -1603,9 +7400,42 @@ function g4()
         top : "0%",
         scale : 1,
     })
+    gsap.to("#H1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#H2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#H3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#H4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
 }
 G1.addEventListener("click",function(det)
-{
+{   exit.style.display = "initial"; 
+    exit.style.opacity = 1;
     animation();
     g1();
     gsap.to("#G1",
@@ -1618,7 +7448,8 @@ G1.addEventListener("click",function(det)
     })
 })
 G2.addEventListener("click",function(det)
-{
+{   exit.style.display = "initial"; 
+    exit.style.opacity = 1;
     if(flag)
     {
         animation();
@@ -1634,7 +7465,8 @@ G2.addEventListener("click",function(det)
     })
 })
 G3.addEventListener("click",function(det)
-{
+{   exit.style.display = "initial"; 
+    exit.style.opacity = 1;
     if(flag)
     {
         animation();
@@ -1650,7 +7482,8 @@ G3.addEventListener("click",function(det)
     })
 })
 G4.addEventListener("click",function(det)
-{
+{   exit.style.display = "initial"; 
+    exit.style.opacity = 1;
     if(flag)
     {
         animation();
@@ -1668,6 +7501,299 @@ G4.addEventListener("click",function(det)
 
 function h1()
 {
+    gsap.to("#A1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#A2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#A3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#A4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#B1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#B2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#B3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#B4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#I1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#I2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#I3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#I4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#J1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#J2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#J3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#J4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#C1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#C2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#C3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#C4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#D1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#D2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#D3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#D4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#E1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#E2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#E3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#E4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#F1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#F2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#F3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#F4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#G1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#G2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#G3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#G4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
     gsap.to("#H2",
     {
         position : "relative",
@@ -1695,6 +7821,299 @@ function h1()
 }
 function h2()
 {
+    gsap.to("#A1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#A2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#A3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#A4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#B1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#B2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#B3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#B4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#I1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#I2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#I3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#I4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#J1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#J2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#J3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#J4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#C1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#C2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#C3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#C4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#D1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#D2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#D3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#D4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#E1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#E2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#E3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#E4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#F1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#F2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#F3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#F4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#G1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#G2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#G3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#G4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
     gsap.to("#H1",
     {
         position : "relative",
@@ -1722,6 +8141,299 @@ function h2()
 }
 function h3()
 {
+    gsap.to("#A1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#A2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#A3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#A4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#B1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#B2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#B3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#B4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#I1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#I2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#I3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#I4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#J1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#J2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#J3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#J4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#C1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#C2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#C3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#C4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#D1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#D2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#D3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#D4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#E1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#E2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#E3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#E4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#F1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#F2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#F3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#F4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#G1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#G2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#G3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#G4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
     gsap.to("#H1",
     {
         position : "relative",
@@ -1749,6 +8461,299 @@ function h3()
 }
 function h4()
 {
+    gsap.to("#A1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#A2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#A3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#A4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#B1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#B2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#B3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#B4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#I1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#I2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#I3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#I4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#J1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#J2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#J3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#J4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#C1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#C2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#C3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#C4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#D1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#D2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#D3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#D4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#E1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#E2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#E3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#E4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#F1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#F2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#F3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#F4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#G1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#G2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#G3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#G4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
     gsap.to("#H1",
     {
         position : "relative",
@@ -1775,20 +8780,22 @@ function h4()
     })
 }
 H1.addEventListener("click",function(det)
-{
+{   exit.style.display = "initial"; 
+    exit.style.opacity = 1;
     animation();
     h1();
     gsap.to("#H1",
     {
         position : "absolute",
         duration : 2,
-        right : "230%",
+        right : "460%",
         top : "40%",
         scale : 2,
     })
 })
 H2.addEventListener("click",function(det)
-{
+{   exit.style.display = "initial"; 
+    exit.style.opacity = 1;
     if(flag)
     {
         animation();
@@ -1798,13 +8805,14 @@ H2.addEventListener("click",function(det)
     {
         position : "absolute",
         duration : 2,
-        right : "230%",
+        right : "460%",
         top : "40%",
         scale : 2,
     })
 })
 H3.addEventListener("click",function(det)
-{
+{   exit.style.display = "initial"; 
+    exit.style.opacity = 1;
     if(flag)
     {
         animation();
@@ -1814,13 +8822,14 @@ H3.addEventListener("click",function(det)
     {
         position : "absolute",
         duration : 2,
-        right : "230%",
+        right : "460%",
         top : "40%",
         scale : 2,
     })
 })
 H4.addEventListener("click",function(det)
-{
+{   exit.style.display = "initial"; 
+    exit.style.opacity = 1;
     if(flag)
     {
         animation();
@@ -1830,14 +8839,417 @@ H4.addEventListener("click",function(det)
     {
         position : "absolute",
         duration : 2,
-        right : "230%",
+        right : "460%",
         top : "40%",
         scale : 2,
     })
 })
 
 
+var close = document.querySelector("#cancle");
+function animationClose()
+{
+    flag = true;
+    var tl4 = gsap.timeline();
+    tl4.to("#id0",
+    {
+      position : "absolute",
+      left : "0%",
+      duration : 2,
+    },"bro")
+    .to("#id1",
+    {
+      position : "absolute",
+      left : "10%",
+      duration : 2,
+    },"bro")
+    .to("#id2",
+    {
+      position : "absolute",
+      left : "20%",
+      duration : 2,
+    },"bro")
+  
+    .to("#id3",
+    {
+      position : "absolute",
+      left : "30%",
+      duration : 2,
+    },"bro")
+    .to("#id4",
+    {
+      position : "absolute",
+      left : "40%",
+      duration : 2,
+    },"bro")
+    .to("#id5",
+    {
+      position : "absolute",
+      right : "40%",
+      duration : 2,
+    },"bro")
+    .to("#id6",
+    {
+      position : "absolute",
+      right : "30%",
+      duration : 2,
+    },"bro")
+    .to("#id7",
+    {
+      position : "absolute",
+      right : "20%",
+      duration : 2,
+    },"bro")
+    .to("#id8",
+    {
+      position : "absolute",
+      right : "10%",
+      duration : 2,
+    },"bro")
+    .to("#id9",
+    {
+      position : "absolute",
+      right : "0%",
+      duration : 2,
+    },"bro")
+}
 
+function back()
+{
+    gsap.to("#A1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#A2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#A3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#A4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#B1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#B2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#B3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#B4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#I1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#I2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#I3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#I4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#J1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#J2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })    
+    gsap.to("#J3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#J4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#C1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#C2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#C3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#C4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#D1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#D2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#D3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#D4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#E1",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#E2",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#E3",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#E4",
+    {
+        position : "relative",
+        duration : 2,
+        left : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#F1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#F2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#F3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#F4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#G1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#G2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#G3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#G4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+
+    gsap.to("#H1",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    }) 
+    gsap.to("#H2",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#H3",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+    gsap.to("#H4",
+    {
+        position : "relative",
+        duration : 2,
+        right : "0%",
+        top : "0%",
+        scale : 1,
+    })
+}
+
+close.addEventListener("click",function()
+{
+    back();
+    animationClose();
+    exit.style.opacity = 0;
+    exit.style.display = "none";
+})
 
 
 
