@@ -302,6 +302,11 @@
         flex-direction: column;
         overflow: hidden;
     }
+    #itm3 button h1{
+        font-size: 20px;
+        text-transform: capitalize;
+        font-weight: 400;
+    }
     #bottum #wraper
     {
         width: 100%;
